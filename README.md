@@ -36,7 +36,10 @@ Rúnir offers a variety of products and presentations:
 
 Biotechnology engineer and MSc. in Nanotechnology. Passionate researcher and technology fanatic. He is compromised with the brand and is interested in creating many more than beautiful and functional web applications. He has studied in Mexico and Spain, and participated in international robotics competitions (FIRST) as well as having won Santander's Innovation Challenge in 2017. He has worked as a teacher, a tutor, a financial product innovator, an operations specialist, and a production manager. He is now exploring the world of wep applications hoping to expand his abilities.
 
-#### Omar
+#### Omar Páramo Zanella
+
+.NET / Game and future Web Developer, friend of the computers since his 4 years old, Computer Science Bachelor with 8 diplomas in .NET Framework awarded by the Mexican STPS.
+With knowledge of C # ADO.net, ASP.NET & Unity 2D. Deep passion for videogames, he has participated in the develop of 2 videogames as programmer and writter and the migration of a system, working in the mexican CISEN. He also has knowledge in pixel art and musical production. All learned by himself due to his autodidacticism from him. Not being this enough, now he's interested in expanding his programming skills by learning Web Developing.
 
 #### Alma
 
