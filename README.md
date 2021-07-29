@@ -39,3 +39,17 @@ Biotechnology engineer and MSc. in Nanotechnology. Passionate researcher and tec
 #### Omar
 
 #### Alma
+
+## Where did we get our inspiration from?
+
+This site was inspired by the following:
+
+- Due to its...
+- Due to its...
+- Due to its...
+- Due to its...
+- Due to its...
+
+  ***
+
+> **We hope you enjoy the user experience!**
