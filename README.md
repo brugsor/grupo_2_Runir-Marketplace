@@ -47,11 +47,20 @@ With knowledge of C # ADO.net, ASP.NET & Unity 2D. Deep passion for videogames, 
 
 This site was inspired by the following:
 
-- Due to its...
-- Due to its...
-- Due to its...
-- Due to its...
-- Due to its...
+- [Amazon.com](https://www.amazon.com/)
+  Due to its title bar, the way it presents the products, and the tabs that make it easy to navigate.
+
+- [Cyprez.com](http://cyprez.com/home)
+  We like the hovers and the parallax design.
+
+- [BodegasAlianza.com](https://www.bodegasalianza.com/)
+  We liked its slider showing new products and offers.
+
+- [WildBeerCo.com](https://www.wildbeerco.com/)
+  We are inspired by its HERO and the block design with smooth fading animations.
+
+- [Apple.com](https://www.apple.com/)
+  We love the simplicity and soberness of the site. It makes it easy to use and elegant to the eye.
 
   ***
 
