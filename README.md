@@ -6,7 +6,7 @@ This Marketplace will serve the client (**Rúnir**) to publish any product it de
 
 Rúnir is a company based in Mexico dedicated to the production of mead as a millenary beverage. It has as a mission to bring back the whole experience of the Norse in every product.
 
-> Check out {Rúnir's Instagram Profile}(https://www.instagram.com/runir_mead/)!
+> Check out [Rúnir's Instagram Profile](https://www.instagram.com/runir_mead/)!
 
 ## Who are Rúnirs' clients?
 
