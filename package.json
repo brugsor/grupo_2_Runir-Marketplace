@@ -1,0 +1,33 @@
+{
+  "name": "runir-marketplace",
+  "version": "1.0.0",
+  "description": "This is Rúnir's Marketplace",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "develop": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brugsor/Runir-Marketplace.git"
+  },
+  "keywords": [
+    "Rúnir",
+    "mead",
+    "marketplace"
+  ],
+  "author": "BOA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brugsor/Runir-Marketplace/issues"
+  },
+  "homepage": "https://github.com/brugsor/Runir-Marketplace#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fontawesome": "^5.6.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
