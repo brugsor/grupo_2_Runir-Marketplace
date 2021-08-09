@@ -41,7 +41,9 @@ Biotechnology engineer and MSc. in Nanotechnology. Passionate researcher and tec
 .NET / Game and future Web Developer, friend of the computers since his 4 years old, Computer Science Bachelor with 8 diplomas in .NET Framework awarded by the Mexican STPS.
 With knowledge of C # ADO.net, ASP.NET & Unity 2D. Deep passion for videogames, he has participated in the develop of 2 videogames as programmer and writter and the migration of a system, working in the mexican CISEN. He also has knowledge in pixel art and musical production. All learned by himself due to his autodidacticism from him. Not being this enough, now he's interested in expanding his programming skills by learning Web Developing.
 
-#### Alma
+#### Alma García Romero
+Aeronautical engineer recently graduated. She started programming at university with languages like C++, Python and MySQL. Recently, she is learning new tools and expanding her horizonts for improving her skills. Since 2 years ago, she has been working giving technical support
+to a flight simulator at the Mexicana Training Center.
 
 ## Where did we get our inspiration from?
 
