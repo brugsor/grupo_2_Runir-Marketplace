@@ -1,1 +1,6 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Mirza:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: "Norse";
+  src: url("../fonts/Norse.otf") format("opentype");
+}
+/*# sourceMappingURL=styles.css.map */
