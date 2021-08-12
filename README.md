@@ -42,6 +42,7 @@ Biotechnology engineer and MSc. in Nanotechnology. Passionate researcher and tec
 With knowledge of C # ADO.net, ASP.NET & Unity 2D. Deep passion for videogames, he has participated in the develop of 2 videogames as programmer and writter and the migration of a system, working in the mexican CISEN. He also has knowledge in pixel art and musical production. All learned by himself due to his autodidacticism from him. Not being this enough, now he's interested in expanding his programming skills by learning Web Developing.
 
 #### Alma García Romero
+
 Aeronautical engineer recently graduated. She started programming at university with languages like C++, Python and MySQL. Recently, she is learning new tools and expanding her horizonts for improving her skills. Since 2 years ago, she has been working giving technical support
 to a flight simulator at the Mexicana Training Center.
 
@@ -64,6 +65,10 @@ This site was inspired by the following:
 - [Apple.com](https://www.apple.com/)
   We love the simplicity and soberness of the site. It makes it easy to use and elegant to the eye.
 
-  ***
+## Want to check out how our team works?
+
+This is the link to our [Trello](https://trello.com/b/5gt1TZnK/ourlittlemarketplace)!
+
+---
 
 > **We hope you enjoy the user experience!**
