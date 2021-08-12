@@ -9,17 +9,32 @@ app.listen(3000, () => {
   console.log("Server running on port 3000.");
 });
 
-// Ruta /"root"
+// Path /"root"
 app.get("/", (req, res) => {
   res.sendFile(path.resolve("./views/index.html"));
 });
 
-// Ruta /home
+// Path /home
 app.get("/home", (req, res) => {
   res.sendFile(path.resolve("./views/index.html"));
 });
 
-// Ruta 404 ¿?
+// Path /login
+app.get("/login", (req, res) => {
+  res.sendFile(path.resolve("./views/login.html"));
+});
+
+// Path /register
+app.get("/register", (req, res) => {
+  res.sendFile(path.resolve("./views/register.html"));
+});
+
+// Path /register
+app.get("/cart", (req, res) => {
+  res.sendFile(path.resolve("./views/cart.html"));
+});
+
+// Path 404 ¿?
 app.get("*", (req, res) => {
   res.status(404).send("404 not found. <br> ¡Odin, guíanos a nuestro destino!");
 });

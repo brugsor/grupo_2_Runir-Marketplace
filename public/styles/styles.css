@@ -1,6 +1,404 @@
-@import url("https://fonts.googleapis.com/css2?family=Mirza:wght@400;500;600;700&display=swap");
 @font-face {
   font-family: "Norse";
   src: url("../fonts/Norse.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Kelvinch";
+  src: url("../fonts/Kelvinch-Roman.otf") format("opentype");
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 231, 195, 0.8)), color-stop(rgba(255, 231, 195, 0.8)), to(rgba(255, 231, 195, 0.8))), url("../img/madera.png");
+  background-image: linear-gradient(rgba(255, 231, 195, 0.8), rgba(255, 231, 195, 0.8), rgba(255, 231, 195, 0.8)), url("../img/madera.png");
+  color: #b5714a;
+  font-family: "Kelvinch";
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
+  padding-bottom: 150px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Norse";
+}
+
+.bg-light {
+  background-color: rgba(255, 231, 195, 0) !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #b4714a !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #af8f7d !important;
+  font-family: "Norse";
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+h1 {
+  font-size: 5em;
+  font-weight: bold;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 150px;
+  width: 100%;
+  background-color: rgba(181, 113, 74, 0.8);
+  color: #ffe7c3;
+}
+
+footer span {
+  font-size: 1.1em;
+}
+
+footer a {
+  color: #fff6e9;
+  text-decoration: none;
+}
+
+footer a i {
+  font-size: 2em;
+  margin-left: 1em;
+}
+
+footer a:hover {
+  color: #ffe7c3;
+}
+
+.rock {
+  background-image: url("../img/rock.jpg");
+}
+
+.woods {
+  background-image: url("../img/woods.jpg");
+}
+
+.opalan {
+  background-image: url("../img/opal.jpg");
+  height: 600px !important;
+}
+
+.parallax {
+  /* The image used */
+  /* Set a specific height */
+  height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.accordion {
+  width: 100%;
+  max-width: 1080px;
+  height: 500px;
+  overflow: hidden;
+  margin: 50px auto;
+}
+
+.accordion ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  width: 33.3333%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.accordion ul li div {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.accordion ul li div div {
+  display: block;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  vertical-align: bottom;
+  padding: 15px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.accordion ul li div div * {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.accordion ul li div div h2 {
+  text-overflow: clip;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+  top: 300px;
+}
+
+.accordion ul li div div p {
+  top: 300px;
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+}
+
+.accordion ul li div div a {
+  top: 300px;
+  font-size: 1.3em;
+  color: #fff;
+  text-decoration: none;
+  display: inline !important;
+  margin-bottom: 0.5em;
+}
+
+.accordion ul li:nth-child(1) {
+  background-image: url("../img/opal.jpg");
+}
+
+.accordion ul li:nth-child(2) {
+  background-image: url("../img/feingur.jpg");
+}
+
+.accordion ul li:nth-child(3) {
+  background-image: url("../img/haegl.jpg");
+}
+
+.accordion ul:hover li,
+.accordion ul:focus-within li {
+  width: 8%;
+}
+
+.accordion ul li:focus {
+  outline: none;
+}
+
+.accordion ul:hover li:hover,
+.accordion ul li:focus,
+.accordion ul:focus-within li:focus {
+  width: 50%;
+}
+
+.accordion ul:hover li:hover div,
+.accordion ul li:focus div,
+.accordion ul:focus-within li:focus div {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.accordion ul:hover li:hover div *,
+.accordion ul li:focus div *,
+.accordion ul:focus-within li:focus div * {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.accordion ul:hover li {
+  width: 20% !important;
+}
+
+.accordion ul:hover li div * {
+  opacity: 0 !important;
+}
+
+.accordion ul:hover li:hover {
+  width: 50% !important;
+}
+
+.accordion ul:hover li:hover div {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.accordion ul:hover li:hover div * {
+  opacity: 1 !important;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.accordion-opalan {
+  width: 100%;
+  max-width: 900px;
+  height: 500px;
+  overflow: hidden;
+  margin: 50px auto;
+}
+
+.accordion ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  width: 50%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.accordion ul li div {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.accordion ul li div div {
+  display: block;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  vertical-align: bottom;
+  padding: 15px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.accordion ul li div div * {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.accordion ul li div div h2 {
+  text-overflow: clip;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+  top: 300px;
+}
+
+.accordion ul li div div p {
+  top: 300px;
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+}
+
+.accordion ul li div div a {
+  top: 300px;
+  font-size: 1.3em;
+  color: #fff;
+  text-decoration: none;
+  display: inline !important;
+  margin-bottom: 0.5em;
+}
+
+.accordion ul li:nth-child(1) {
+  background-image: url("../img/feingur.jpg");
+}
+
+.accordion ul li:nth-child(2) {
+  background-image: url("../img/haegl.jpg");
+}
+
+.accordion ul:hover li,
+.accordion ul:focus-within li {
+  width: 20%;
+}
+
+.accordion ul li:focus {
+  outline: none;
+}
+
+.accordion ul:hover li:hover,
+.accordion ul li:focus,
+.accordion ul:focus-within li:focus {
+  width: 50%;
+}
+
+.accordion ul:hover li:hover div,
+.accordion ul li:focus div,
+.accordion ul:focus-within li:focus div {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.accordion ul:hover li:hover div *,
+.accordion ul li:focus div *,
+.accordion ul:focus-within li:focus div * {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.accordion ul:hover li {
+  width: 20% !important;
+}
+
+.accordion ul:hover li div * {
+  opacity: 0 !important;
+}
+
+.accordion ul:hover li:hover {
+  width: 50% !important;
+}
+
+.accordion ul:hover li:hover div {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.accordion ul:hover li:hover div * {
+  opacity: 1 !important;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
 }
 /*# sourceMappingURL=styles.css.map */

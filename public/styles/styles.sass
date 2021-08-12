@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Mirza:wght@400;500;600;700&display=swap")
+// @import url("https://fonts.googleapis.com/css2?family=Mirza:wght@400;500;600;700&display=swap")
 
 @font-face
   font-family: "Norse"
@@ -7,3 +7,353 @@
     font-family: "Norse"
     font-weight: bold
     src: url("../fonts/Norse-Bold.otf") format("opentype")
+
+@font-face
+  font-family: "Kelvinch"
+  src: url("../fonts/Kelvinch-Roman.otf") format("opentype")
+
+@import ./_colors
+
+$f-height: 150px
+body
+  background-image: linear-gradient(rgba(255, 231, 195, 0.8),rgba(255, 231, 195, 0.8),rgba(255, 231, 195, 0.8)), url("../img/madera.png")
+  color: rgb(181, 113, 74)
+  font-family: "Kelvinch"
+  min-height: 100vh
+  position: relative
+  margin: 0
+  padding-bottom: $f-height //height of the footer
+  box-sizing: border-box
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-family: "Norse"
+
+.bg-light
+  background-color: rgba(255, 231, 195, 0) !important
+
+.navbar-light .navbar-nav .nav-link.active
+  color: #b4714a !important
+
+.navbar-light .navbar-nav .nav-link
+  color: #af8f7d !important
+  font-family: "Norse"
+  font-size: 1.5em
+
+p
+  font-size: 1.5em
+
+h1
+  font-size: 5em
+  font-weight: bold
+
+footer
+  position: absolute
+  bottom: 0
+  height: $f-height
+  width: 100%
+  background-color: rgba(181, 113, 74, 0.8)
+  color: #ffe7c3
+  span
+    font-size: 1.1em
+
+  a
+    color: #fff6e9
+    text-decoration: none
+    i
+      font-size: 2em
+      margin-left: 1em
+
+  a:hover
+    color: #ffe7c3
+
+.rock
+  background-image: url("../img/rock.jpg")
+
+.woods
+  background-image: url("../img/woods.jpg")
+
+.opalan
+  background-image: url("../img/opal.jpg")
+  height: 600px !important
+
+.parallax
+  /* The image used */
+
+  /* Set a specific height */
+  height: 400px
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+
+// Accordion Height
+$a-height: 500px
+
+// Position text along bottom
+$text-offset: $a-height - 200
+
+.accordion
+  width: 100%
+  max-width: 1080px
+  height: $a-height
+  overflow: hidden
+  margin: 50px auto
+
+  ul
+    width: 100%
+    display: table
+    table-layout: fixed
+    margin: 0
+    padding: 0
+
+    li
+      display: table-cell
+      vertical-align: bottom
+      position: relative
+      width: 33.3333% // 6 into 100
+      height: $a-height
+
+      background-repeat: no-repeat
+      background-position: center center
+
+      transition: all 500ms ease
+
+      div
+        display: block
+        overflow: hidden
+        width: 100%
+
+        div
+          display: block
+          height: $a-height
+          width: 100%
+
+          position: relative
+          z-index: 3
+          vertical-align: bottom
+          padding: 15px 20px
+          box-sizing: border-box
+          color: #fff
+          text-decoration: none
+
+          transition: all 200ms ease
+
+          *
+            opacity: 0
+            margin: 0
+            width: 100%
+            text-overflow: ellipsis
+            position: relative
+            z-index: 5
+
+            white-space: nowrap
+            overflow: hidden
+
+            -webkit-transform: translateX(-20px)
+            transform: translateX(-20px)
+
+            -webkit-transition: all 400ms ease
+            transition: all 400ms ease
+
+          h2
+            text-overflow: clip
+            font-size: 3em
+            text-transform: uppercase
+            margin-bottom: 0.3em
+            top: $text-offset
+
+          p
+            top: $text-offset
+            font-size: 1.3em
+            margin-bottom: 0.5em
+
+          a
+            top: $text-offset
+            font-size: 1.3em
+            color: #fff
+            text-decoration: none
+            display: inline !important
+            margin-bottom: 0.5em
+
+    // Background images
+    li:nth-child(1)
+      background-image: url("../img/opal.jpg")
+
+    li:nth-child(2)
+      background-image: url("../img/feingur.jpg")
+
+    li:nth-child(3)
+      background-image: url("../img/haegl.jpg")
+
+    &:hover li,
+    &:focus-within li
+      width: 8%
+
+    li:focus
+      outline: none
+
+    &:hover li:hover,
+    // allow users to tab through active slides
+    li:focus,
+    &:focus-within li:focus
+      width: 50%
+
+      div
+        background: rgba(0, 0, 0, 0.4)
+
+        *
+          opacity: 1
+          -webkit-transform: translateX(0)
+          transform: translateX(0)
+
+    &:hover li
+      width: 20% !important
+
+      div *
+        opacity: 0 !important
+
+    &:hover li:hover
+      width: 50% !important
+
+      div
+        background: rgba(0, 0, 0, 0.4)
+
+        *
+          opacity: 1 !important
+          -webkit-transform: translateX(0)
+          transform: translateX(0)
+
+  &-opalan
+    width: 100%
+    max-width: 900px
+    height: $a-height
+    overflow: hidden
+    margin: 50px auto
+
+  ul
+    width: 100%
+    display: table
+    table-layout: fixed
+    margin: 0
+    padding: 0
+
+    li
+      display: table-cell
+      vertical-align: bottom
+      position: relative
+      width: 50%
+      height: $a-height
+
+      background-repeat: no-repeat
+      background-position: center center
+
+      transition: all 500ms ease
+
+      div
+        display: block
+        overflow: hidden
+        width: 100%
+
+        div
+          display: block
+          height: $a-height
+          width: 100%
+
+          position: relative
+          z-index: 3
+          vertical-align: bottom
+          padding: 15px 20px
+          box-sizing: border-box
+          color: #fff
+          text-decoration: none
+
+          transition: all 200ms ease
+
+          *
+            opacity: 0
+            margin: 0
+            width: 100%
+            text-overflow: ellipsis
+            position: relative
+            z-index: 5
+
+            white-space: nowrap
+            overflow: hidden
+
+            -webkit-transform: translateX(-20px)
+            transform: translateX(-20px)
+
+            -webkit-transition: all 400ms ease
+            transition: all 400ms ease
+
+          h2
+            text-overflow: clip
+            font-size: 3em
+            text-transform: uppercase
+            margin-bottom: 0.3em
+            top: $text-offset
+
+          p
+            top: $text-offset
+            font-size: 1.3em
+            margin-bottom: 0.5em
+
+          a
+            top: $text-offset
+            font-size: 1.3em
+            color: #fff
+            text-decoration: none
+            display: inline !important
+            margin-bottom: 0.5em
+
+    // Background images
+    li:nth-child(1)
+      background-image: url("../img/feingur.jpg")
+
+    li:nth-child(2)
+      background-image: url("../img/haegl.jpg")
+
+    &:hover li,
+    &:focus-within li
+      width: 20%
+
+    li:focus
+      outline: none
+
+    &:hover li:hover,
+    // allow users to tab through active slides
+    li:focus,
+    &:focus-within li:focus
+      width: 50%
+
+      div
+        background: rgba(0, 0, 0, 0.4)
+
+        *
+          opacity: 1
+          -webkit-transform: translateX(0)
+          transform: translateX(0)
+
+    &:hover li
+      width: 20% !important
+
+      div *
+        opacity: 0 !important
+
+    &:hover li:hover
+      width: 50% !important
+
+      div
+        background: rgba(0, 0, 0, 0.4)
+
+        *
+          opacity: 1 !important
+          -webkit-transform: translateX(0)
+          transform: translateX(0)
