@@ -8,42 +8,28 @@ We managed to establish good lines of communication using WhatsApp and Slack. Th
 
 ## Sprint 2 - HTML + CSS
 
-Rúnir is a company based in Mexico dedicated to the production of mead as a millenary beverage. It has as a mission to bring back the whole experience of the Norse in every product.
-
-> Check out [Rúnir's Instagram Profile](https://www.instagram.com/runir_mead/)!
+> Fill in after Sprint 2...
 
 ## Sprint 3 - Template Engines
 
-Rúnir is a company based in Mexico dedicated to the production of mead as a millenary beverage. It has as a mission to bring back the whole experience of the Norse in every product.
-
-> Check out [Rúnir's Instagram Profile](https://www.instagram.com/runir_mead/)!
+> Fill in after Sprint 3...
 
 ## Sprint 4 - JSON and HTTP Methods
 
-Rúnir is a company based in Mexico dedicated to the production of mead as a millenary beverage. It has as a mission to bring back the whole experience of the Norse in every product.
-
-> Check out [Rúnir's Instagram Profile](https://www.instagram.com/runir_mead/)!
+> Fill in after Sprint 4...
 
 ## Sprint 5 - Middlewares + Auth
 
-Rúnir is a company based in Mexico dedicated to the production of mead as a millenary beverage. It has as a mission to bring back the whole experience of the Norse in every product.
-
-> Check out [Rúnir's Instagram Profile](https://www.instagram.com/runir_mead/)!
+> Fill in after Sprint 5...
 
 ## Sprint 6 - Data Bases
 
-Rúnir is a company based in Mexico dedicated to the production of mead as a millenary beverage. It has as a mission to bring back the whole experience of the Norse in every product.
-
-> Check out [Rúnir's Instagram Profile](https://www.instagram.com/runir_mead/)!
+> Fill in after Sprint 6...
 
 ## Sprint 7 - Validations (Back + Front)
 
-Rúnir is a company based in Mexico dedicated to the production of mead as a millenary beverage. It has as a mission to bring back the whole experience of the Norse in every product.
-
-> Check out [Rúnir's Instagram Profile](https://www.instagram.com/runir_mead/)!
+> Fill in after Sprint 7...
 
 ## Sprint 8 - APIs + React
 
-Rúnir is a company based in Mexico dedicated to the production of mead as a millenary beverage. It has as a mission to bring back the whole experience of the Norse in every product.
-
-> Check out [Rúnir's Instagram Profile](https://www.instagram.com/runir_mead/)!
+> Fill in after Sprint 8...
