@@ -1,37 +1,12 @@
-// @import url("https://fonts.googleapis.com/css2?family=Mirza:wght@400;500;600;700&display=swap")
-
-@font-face
-  font-family: "Norse"
-  src: url("../fonts/Norse.otf") format("opentype")
-  &
-    font-family: "Norse"
-    font-weight: bold
-    src: url("../fonts/Norse-Bold.otf") format("opentype")
-
-@font-face
-  font-family: "Kelvinch"
-  src: url("../fonts/Kelvinch-Roman.otf") format("opentype")
+@import ./_fonts
 
 @import ./_colors
 
-$f-height: 150px
-body
-  background-image: linear-gradient(rgba(255, 231, 195, 0.8),rgba(255, 231, 195, 0.8),rgba(255, 231, 195, 0.8)), url("../img/madera.png")
-  color: rgb(181, 113, 74)
-  font-family: "Kelvinch"
-  min-height: 100vh
-  position: relative
-  margin: 0
-  padding-bottom: $f-height //height of the footer
-  box-sizing: border-box
+@import ./_header
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6
-  font-family: "Norse"
+@import ./_footer
+
+@import ./_body
 
 .bg-light
   background-color: rgba(255, 231, 195, 0) !important
