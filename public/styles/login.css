@@ -8,6 +8,20 @@
   src: url("../fonts/Kelvinch-Roman.otf") format("opentype");
 }
 
+.bg-light {
+  background-color: rgba(255, 231, 195, 0) !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #b4714a !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #af8f7d !important;
+  font-family: "Norse";
+  font-size: 1.5em;
+}
+
 body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 231, 195, 0.8)), color-stop(rgba(255, 231, 195, 0.8)), to(rgba(255, 231, 195, 0.8))), url("../img/madera.png");
   background-image: linear-gradient(rgba(255, 231, 195, 0.8), rgba(255, 231, 195, 0.8), rgba(255, 231, 195, 0.8)), url("../img/madera.png");
