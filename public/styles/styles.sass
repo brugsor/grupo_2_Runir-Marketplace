@@ -15,26 +15,6 @@ h1
   font-size: 5em
   font-weight: bold
 
-footer
-  position: absolute
-  bottom: 0
-  height: $f-height
-  width: 100%
-  background-color: rgba(181, 113, 74, 0.8)
-  color: #ffe7c3
-  span
-    font-size: 1.1em
-
-  a
-    color: #fff6e9
-    text-decoration: none
-    i
-      font-size: 2em
-      margin-left: 1em
-
-  a:hover
-    color: #ffe7c3
-
 .rock
   background-image: url("../img/rock.jpg")
 
@@ -64,8 +44,7 @@ $a-height: 500px
 $text-offset: $a-height - 200
 
 .accordion
-  width: 100%
-  max-width: 1080px
+  width: 100vw
   height: $a-height
   overflow: hidden
   margin: 50px auto
@@ -81,7 +60,7 @@ $text-offset: $a-height - 200
       display: table-cell
       vertical-align: bottom
       position: relative
-      width: 33.3333% // 6 into 100
+      width: 33.3333vw // 6 into 100
       height: $a-height
 
       background-repeat: no-repeat
@@ -148,13 +127,13 @@ $text-offset: $a-height - 200
 
     // Background images
     li:nth-child(1)
-      background-image: url("../img/opal.jpg")
+      background-image: url("../img/midsommar.jpg")
 
     li:nth-child(2)
-      background-image: url("../img/feingur.jpg")
+      background-image: url("../img/products.jpg")
 
     li:nth-child(3)
-      background-image: url("../img/haegl.jpg")
+      background-image: url("../img/barril.jpg")
 
     &:hover li,
     &:focus-within li
