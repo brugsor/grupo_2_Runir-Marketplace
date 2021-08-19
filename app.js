@@ -5,8 +5,10 @@ const path = require("path");
 const publicPath = path.resolve(__dirname, "./public");
 app.use(express.static(publicPath));
 
-app.listen(3000, () => {
-  console.log("Server running on port 3000.");
+// Waking the server
+let port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log("Server running on port " + port + ".");
 });
 
 // Path /"root"
