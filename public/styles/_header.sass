@@ -2,34 +2,11 @@
 @import ./_fonts
 
 @media (min-width: 361px)
-  nav
-    display: flex !important
-    justify-content: space-evenly
-    flex-wrap: nowrap
-    padding-bottom: 10px
-    ul
-      padding: 0px
-      display: flex
-      flex-direction: column
-      flex-wrap: wrap
-      justify-content: space-evenly
-      li
-        padding: 5px
-        list-style-type: none
-        a
-          color: $titlesColor
-          text-decoration: none
-  .burger-menu
-    display: none
   .main
     display: flex
     flex-wrap: wrap
     flex-direction: row
     justify-content: space-between
-  .product
-    width: 40%
-  .main-header-top-bar
-    flex-direction: column
   .mobile-nav
     display: none !important
 
@@ -51,33 +28,21 @@
         a
           color: $titlesColor
           text-decoration: none
-  .burger-menu
-    display: none
   .main
     display: flex
     flex-wrap: wrap
     flex-direction: row
     justify-content: space-between
-  .product
-    width: 40%
-  .main-header-top-bar
-    flex-direction: column
+  .navbar-toggler
+    display: flex !important
+  .shoppingCart
+    display: flex !important
 
 @media (min-width: 768px)
   nav
     flex-direction: row
     ul
       flex-direction: row
-  .product
-    width: 20%
-  .search-container
-    width: 33% !important
-  .logo
-    width: 33% !important
-  .copy-header
-    width: 33% !important
-  .extras
-    width: 33vw !important
 
 .bg-light
   background-color: rgba(255, 231, 195, 0) !important
@@ -89,12 +54,16 @@
   color: $titlesColor !important
   font-family: "Norse"
   font-size: 1.5em
+  justify-items: flex-end
 
 header
   display: flex
   box-sizing: border-box
   width: 100vw
   justify-content: space-evenly
+  .container-fluid
+    width: 100vw
+    justify-content: space-evenly
 
 .mobile-nav
   display: flex
@@ -102,5 +71,10 @@ header
   justify-content: space-evenly
   position: fixed
   bottom: 0px
+  height: 100px
 
-.fa.fa-shopping-cart
+.navbar-toggler
+  display: none
+
+.shoppingCart
+  display: none

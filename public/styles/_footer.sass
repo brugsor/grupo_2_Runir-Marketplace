@@ -1,19 +1,37 @@
 @import ./_colors
 
+@media (min-width: 361px)
+  footer
+    padding-bottom: 10px !important
+
 footer
+  display: flex
+  box-sizing: border-box
+  justify-content: space-evenly
+  flex-direction: column
+  flex-wrap: nowrap
+  align-items: center
   position: absolute
-  bottom: 0
-  height: 150px
-  width: 100%
-  background-color: rgba(181, 113, 74, 0.8)
-  color: #ffe7c3
-  span
+  bottom: 0px
+  width: 100vw
+  background-color: $footerBgColor
+  color: $lightBackground
+  padding-top: 10px
+  padding-bottom: 50px
+  p
     font-size: 1.1em
+    text-align: center
   a
-    color: #fff6e9
+    color: $lightBackground
     text-decoration: none
     i
       font-size: 2em
-      margin-left: 1em
+      margin: 5px
   a:hover
-    color: #ffe7c3
+    color: $woodBackground
+
+.fab.fa-facebook
+  padding: none
+
+.fab.fa-instagram
+  padding: none
