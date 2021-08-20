@@ -7,3 +7,134 @@
 @import ./_footer
 
 @import ./_body
+
+.woods-bg
+    background-image: url("../img/woods.jpg")
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-size: cover  
+
+.section-content
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    padding-left: 5px
+    padding-right: 5px
+    .section-cart
+        width: 60%
+        text-align: center
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        .h-title
+            margin: 0
+        
+        .div-cart
+            background-image: $bgImage
+            border-radius: 5px
+            width: 100%
+            text-align: left
+            padding: 15px
+            .div-cart-son
+                background-color:#fce6d2
+                border-radius: 5px
+                width: 95%
+                text-align: left
+                padding: 5px
+                border: solid 2px #d4a681
+                box-shadow: 0px 0px 10px #a99f9e
+                .div-product
+                    display: flex
+                    justify-content: space-between
+                    .div-img
+                        width: 40%
+                        .pd-product
+                            font-weight: bold
+                            color: #8b4d29
+                    .div-details
+                        width: 50%
+                        .pd-price
+                            color: #188d7a
+                            font-size: 30px
+                    .btn-delete
+                        background: none
+                        border: none
+                        margin: 0
+                        padding: 0
+                        cursor: pointer
+                    .btn-delete:hover
+                        color: #d30707
+                        text-decoration: underline
+                .products-img
+                    width: 50%
+                    border-radius: 5px
+                
+            
+            .div-cart-son:hover
+                box-shadow: 0px 0px 10px rgb(197, 129, 51)
+                border: solid 2px rgb(197, 129, 51)
+            
+    .section-total
+        width: 30%
+        height: 100%
+        text-align: center
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        flex-direction: column
+        .h-title
+            margin: 0
+        
+        .div-total
+            height: 60%
+            background-image: $bgImage
+            border-radius: 5px
+            width: 100%
+            text-align: left
+            padding: 15px
+            .total-flex
+                display: flex
+                flex-direction: column
+            .div-total-son
+                background-color:#fce6d2
+                border-radius: 5px
+                width: 90%
+                text-align: left
+                padding: 5px
+                box-shadow: 0px 0px 20px rgb(197, 129, 51)
+                border: solid 2px rgb(197, 129, 51)
+                display: flex
+                flex-wrap: wrap
+                .dp-total
+                    width: 100%
+                    
+            .btn-total
+                height: 30px
+                margin-top: 20px
+                color: white
+                background-color: #4da395
+            
+            .btn-total:hover
+                background-color: rgb(197, 129, 51)
+                box-shadow: 0px 0px 10px rgb(255, 180, 94)
+
+
+footer
+  position: absolute
+  bottom: 0
+  height: $f-height
+  width: 100%
+  background-color: rgba(181, 113, 74, 0.8)
+  color: #ffe7c3
+  span
+    font-size: 1.1em
+
+  a
+    color: #fff6e9
+    text-decoration: none
+    i
+      font-size: 2em
+      margin-left: 1em
+
+  a:hover
+    color: #ffe7c3

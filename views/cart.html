@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles/styles.css" />
+  <link rel="stylesheet" href="/fonts/fontawesome-all.min.css" />
+  <link rel="stylesheet" href="/fonts/font-awesome.min.css" />
+  <link rel="stylesheet" href="/fonts/ionicons.min.css" />
+  <link rel="stylesheet" href="/fonts/fontawesome5-overrides.min.css" />
+  <link rel="stylesheet" href="/styles/cart.css" />
+  <title>Shopping Cart</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v9.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat" attribution=setup_tool page_id="101757705041113"
+    logged_in_greeting="Hola!! Escríbenos para solicitar más información!"
+    logged_out_greeting="Hola!! Escríbenos para solicitar más información!">
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img width="100px" src="/img/logo_sepia-min.png" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="/">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ŌTHALAN.html">OTHALAN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="FEINGUR.html">FEINGUR</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="HÆGL.html">HÆGL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cart">CARRITO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/register">REGISTRO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://instagram.com/runir_mead?igshid=e34t3mv99lv7">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="woods-bg">
+    <br /><br />
+    <section class="section-content">
+        <section class="section-cart">
+            <div class="div-cart">
+                <h1 class="h-title">CARRITO</h1>
+                <h5><a href="/">Seguir Comprando</a></h5>
+                <div class="div-cart-son">                    
+                    <div class="div-product">
+                        <div class="div-img">
+                        <img class="products-img" src= "/img/feingur.jpg" alt="product">
+                        <p class="pd-product">FEINGUR</p>
+                        </div>
+                        <div class="div-details"><br />
+                        <p class="pd-price">$999</p><br />
+                        <input type="number" placeholder="Cantidad" class="number_hidro" name="number_hidro" min="1" max="99" style="width:90px">
+                        </div>
+                        <button input="submit" class="btn-delete"><i class="fas fa-trash-alt"></i>Eliminar</button>
+                    </div>
+                </div><br/>
+                <div class="div-cart-son">
+                  <div class="div-product">
+                    <div class="div-img">
+                    <img class="products-img" src= "/img/haegl.jpg" alt="product">
+                    <p class="pd-product">HÆGL</p>
+                    </div>
+                    <div class="div-details"><br />
+                    <p class="pd-price">$999</p><br />
+                    <input type="number" placeholder="Cantidad" class="number_hidro" name="number_hidro" min="1" max="99" style="width:90px">
+                    </div><br />
+                    <button input="submit" class="btn-delete"><i class="fas fa-trash-alt"></i>Eliminar</button>
+                </div>
+                </div><br/>
+            </div>
+        </section>
+        <section class="section-total">
+            <div class="div-total">
+                <h1 class="h-title">Total</h1>
+                <div class="total-flex">
+                  <div class="div-total-son">
+                    <div class="dp-total">
+                        <p>Total:</p>
+                        <p style="color: #4da395;">$1998</p>
+                    </div>
+                    <div class="dp-total">
+                      <p>Producto(s):</p>
+                      <p style="color: #4da395;">2</p>
+                    </div>
+                  </div>
+                  <button class="btn-total" input="submit"><i class="fas fa-check-circle"></i> Confirmar</button>
+              </div>
+            </div>
+        </section>
+    </section><br /><br />
+</div>
+  <footer class="mt-auto">
+    <div class="container h-100">
+      <div class="row align-items-center h-100">
+        <div class="col-sm-12 col-md-4 text-left">
+          <span>TODOS NUESTROS PRODUCTOS SON PARA MAYORES DE EDAD. EVITA EL EXCESO.</span>
+        </div>
+        <div class="col-sm-12 col-md-4 text-center">
+          <a href="https://fb.me/runirmx"> <i class="fab fa-facebook"></i> </a>
+          <a href="https://www.instagram.com/runir_mead/"> <i class="fab fa-instagram"></i> </a>
+          <!--<a href="#"> <i class="fab fa-whatsapp"></i> </a>-->
+        </div>
+        <div class="col-sm-12 col-md-4 text-right">
+          <a href="#">Aviso de privacidad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
+    integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD"
+    crossorigin="anonymous"></script>
+  <script>
+    if (!("ontouchstart" in document.documentElement)) {
+      document.documentElement.className += " no-touch";
+    }
+  </script>
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/8.1.2/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="/__/firebase/8.1.2/firebase-analytics.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+</body>
+
+</html>

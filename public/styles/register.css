@@ -43,4 +43,121 @@ h5,
 h6 {
   font-family: "Norse";
 }
+
+.rock-bg {
+  background-image: url("../img/rock.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 150px;
+  width: 100%;
+  background-color: rgba(181, 113, 74, 0.8);
+  color: #ffe7c3;
+}
+
+footer span {
+  font-size: 1.1em;
+}
+
+footer a {
+  color: #fff6e9;
+  text-decoration: none;
+}
+
+footer a i {
+  font-size: 2em;
+  margin-left: 1em;
+}
+
+footer a:hover {
+  color: #ffe7c3;
+}
+
+.section-form {
+  float: right;
+  padding-right: 15px;
+  width: 40%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-form .h-title {
+  margin: 0;
+}
+
+.section-form .div-form {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 231, 195, 0.8)), color-stop(rgba(255, 231, 195, 0.8)), to(rgba(255, 231, 195, 0.8))), url("../img/madera.png");
+  background-image: linear-gradient(rgba(255, 231, 195, 0.8), rgba(255, 231, 195, 0.8), rgba(255, 231, 195, 0.8)), url("../img/madera.png");
+  margin-top: 28px;
+  height: 80%;
+  border-radius: 5px;
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+}
+
+.section-form .div-form .div-form-son {
+  height: 65%;
+  background-color: #fce6d2;
+  border-radius: 5px;
+  text-align: left;
+  padding: 5px;
+  border: solid 2px #d4a681;
+  -webkit-box-shadow: 0px 0px 10px #a99f9e;
+          box-shadow: 0px 0px 10px #a99f9e;
+  margin-left: 9px;
+}
+
+.section-form .div-form .class-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section-form .div-form .class-form .label-input {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  color: #b47048;
+  font-family: "Norse";
+}
+
+.section-form .div-form .class-form .label-input:hover {
+  color: #4da395;
+}
+
+.section-form .div-form .class-form .class-input {
+  width: 100%;
+}
+
+.section-form .div-form .btn-form {
+  position: relative;
+  left: 10%;
+  width: 80%;
+  float: center;
+  height: 30px;
+  margin-top: 20px;
+  color: white;
+  background-color: #4da395;
+}
+
+.section-form .div-form .btn-form:hover {
+  background-color: #c58133;
+  -webkit-box-shadow: 0px 0px 10px #ffb45e;
+          box-shadow: 0px 0px 10px #ffb45e;
+}
 /*# sourceMappingURL=register.css.map */
