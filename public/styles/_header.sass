@@ -7,8 +7,6 @@
     flex-wrap: wrap
     flex-direction: row
     justify-content: space-between
-  .mobile-nav
-    display: none !important
 
 @media (min-width: 600px)
   nav
@@ -33,17 +31,18 @@
     flex-wrap: wrap
     flex-direction: row
     justify-content: space-between
-  .navbar-toggler
-    display: flex !important
-  .shoppingCart
-    display: flex !important
-    width: 20%
 
 @media (min-width: 768px)
   nav
     flex-direction: row
     ul
       flex-direction: row
+  .navbar-toggler
+    display: flex !important
+  .shoppingCart
+    display: flex !important
+  .mobile-nav
+    display: none !important
 
 .bg-light
   background-color: rgba(255, 231, 195, 0) !important
@@ -63,8 +62,9 @@ header
   width: 100vw
   justify-content: space-evenly
   .container-fluid
-    width: 100vw
+    width: 90vw
     justify-content: space-evenly
+    flex-wrap: nowrap
 
 .mobile-nav
   display: flex

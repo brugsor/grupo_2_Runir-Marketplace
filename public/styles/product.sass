@@ -8,12 +8,90 @@
 
 @import ./_body
 
-.product
-  border-radius: 30px
+.container
+  width: 100%
   padding: 15px
-  margin: 10px
   display: flex
-  flex-wrap: wrap
-  justify-content: center
-  &:hover
-    box-shadow: 0px 0px 10px rgb(100,100,100)
+
+.left-column
+  width: 50%
+  position: relative
+  text-align: center
+
+.right-column
+  width: 50%
+  margin-top: 60px
+
+.left-column img
+  width: 20em
+  border-radius: 10%
+
+/* Product Description */
+.product-description
+  border-bottom: 1px solid $grayBorders
+  margin-bottom: 20px
+
+.product-description span
+  font-size: 12px
+  color: $titlesColor
+  letter-spacing: 1px
+  text-transform: uppercase
+  text-decoration: none
+
+.product-description h1
+  font-weight: 300
+  font-size: 52px
+  color: $titlesColor
+  letter-spacing: -2px
+
+.product-description p
+  font-size: 16px
+  font-weight: 300
+  color: $blackText
+  line-height: 24px
+
+/* Product Price */
+.product-price
+  display: flex
+  align-items: center
+
+.product-price span
+  font-size: 26px
+  font-weight: 300
+  color: $priceColor
+  margin-right: 20px
+
+.cart-btn
+  display: inline-block
+  background-color: $submitButtonsColor
+  border-radius: 6px
+  font-size: 16px
+  color: $buttonTextColor
+  text-decoration: none
+  padding: 12px 30px
+  transition: all .5s
+
+.cart-btn:hover
+  background-color: $hoverSubmitButtonColor
+  color: $buttonTextColor
+
+/* Responsive */
+@media (max-width: 940px)
+  .container
+    flex-direction: column
+    margin-top: 60px
+
+  .left-column,
+  .right-column
+    width: 100%
+
+  .left-column img
+    width: 300px
+    right: 0
+    top: -65px
+    left: initial
+
+@media (max-width: 535px)
+  .left-column img
+    width: 220px
+    top: -85px

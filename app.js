@@ -36,6 +36,11 @@ app.get("/cart", (req, res) => {
   res.sendFile(path.resolve("./views/cart.html"));
 });
 
+// Path /register
+app.get("/product", (req, res) => {
+  res.sendFile(path.resolve("./views/product.html"));
+});
+
 // Path 404 ¿?
 app.get("*", (req, res) => {
   res.status(404).send("404 not found. <br> ¡Odin, guíanos a nuestro destino!");
