@@ -15,62 +15,71 @@
   <title>Rúnir</title>
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<header>
+  <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img width="100px" src="/img/logo_sepia-min.png" />
+      <a class="navbar-brand" href="./">
+        <img width="100vw" src="/img/logoCabin.png" />
+        <img width="100vw" src="/img/runirName.png" alt="Rúnir">
       </a>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Busca en Rúnir.com" aria-label="Search">
+        <button class="btn btn-outline-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </form>
+      <a class="shoppingCart" href="./cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+            <a class="nav-link" href="./">INICIO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="ŌTHALAN.html">OTHALAN</a>
+            <a class="nav-link active" aria-current="page" href="#">INGRESAR</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="FEINGUR.html">FEINGUR</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="HÆGL.html">HÆGL</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://instagram.com/runir_mead?igshid=e34t3mv99lv7">CONTACTO</a>
+            <a class="nav-link" href="./register">REGÍSTRATE</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  
-    <main class="login">
-        <div><input type="text" class="text-input" placeholder="Correo electrónico o usuario"></div>
-        <div><input type="password" class="text-input" placeholder="Contraseña"></div>
-        <div><button type="button" value="Iniciar sesión" class="ingresar">Iniciar sesión</button></div>
-        <div><a href="#"> ¿Olvidaste tu contraseña?</a></div>
-        <div>Si aún no eres cliente:</div>
-        <div><a href="register.html"> Registrate aquí</a></div>
-        </main>
-    
+</header>
 
-  <footer class="mt-auto">
-    <div class="container h-100">
-      <div class="row align-items-center h-100">
-        <div class="col-sm-12 col-md-4 text-left">
-          <span>TODOS NUESTROS PRODUCTOS SON PARA MAYORES DE EDAD. EVITA EL EXCESO.</span>
-        </div>
-        <div class="col-sm-12 col-md-4 text-center">
-          <a href="https://fb.me/runirmx"> <i class="fab fa-facebook"></i> </a>
-          <a href="https://www.instagram.com/runir_mead/"> <i class="fab fa-instagram"></i> </a>
-          <!--<a href="#"> <i class="fab fa-whatsapp"></i> </a>-->
-        </div>
-        <div class="col-sm-12 col-md-4 text-right">
-          <a href="#">Aviso de privacidad</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+<main class="login">
+  <div><input type="text" class="text-input" placeholder="Correo electrónico o usuario"></div>
+  <div><input type="password" class="text-input" placeholder="Contraseña"></div>
+  <div><button type="button" value="Iniciar sesión" class="ingresar">Iniciar sesión</button></div>
+  <div><a href="#"> ¿Olvidaste tu contraseña?</a></div>
+  <div>Si aún no eres cliente:</div>
+  <div><a href="register.html"> Registrate aquí</a></div>
+</main>
+
+
+<footer>
+  <div class="ageWarning">
+    <p>TODOS NUESTROS PRODUCTOS SON PARA MAYORES DE EDAD</p>
+    <p>EVITA EL EXCESO</p>
+  </div>
+  <div class="contact">
+    <a href="https://fb.me/runirmx"> <i class="fab fa-facebook"></i> </a>
+    <a href="https://www.instagram.com/runir_mead/"> <i class="fab fa-instagram"></i> </a>
+    <!--<a href="#"> <i class="fab fa-whatsapp"></i> </a>-->
+  </div>
+  <div class="privacy">
+    <a href="#">Aviso de privacidad</a>
+  </div>
+</footer>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
+  integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+<script>
+  if (!("ontouchstart" in document.documentElement)) {
+    document.documentElement.className += " no-touch";
+  }
+</script>
+
+</body>
+
 </html>
