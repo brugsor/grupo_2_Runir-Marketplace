@@ -110,6 +110,7 @@
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
+    width: 20%;
   }
 }
 
@@ -180,8 +181,21 @@ header .container-fluid {
   display: none;
 }
 
+nav .container-fluid a {
+  text-decoration: none;
+}
+
 .shoppingCart {
   display: none;
+}
+
+.fa.fa-shopping-cart {
+  width: 100%;
+  color: #706563;
+}
+
+.fa.fa-shopping-cart:hover {
+  color: #a99f9e;
 }
 
 * {
@@ -653,7 +667,7 @@ main {
 }
 
 .details {
-  border-top: solid 1px #ebebeb;
+  border-top: solid 1px #a99f9e;
   text-align: left;
   position: relative;
   display: -webkit-box;
@@ -667,9 +681,10 @@ main {
 }
 
 .precio {
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: bold;
   margin: 1px;
-  width: 30%;
+  width: 100%;
   color: #040f16;
 }
 

@@ -110,6 +110,7 @@
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
+    width: 20%;
   }
 }
 
@@ -180,8 +181,21 @@ header .container-fluid {
   display: none;
 }
 
+nav .container-fluid a {
+  text-decoration: none;
+}
+
 .shoppingCart {
   display: none;
+}
+
+.fa.fa-shopping-cart {
+  width: 100%;
+  color: #706563;
+}
+
+.fa.fa-shopping-cart:hover {
+  color: #a99f9e;
 }
 
 * {

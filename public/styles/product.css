@@ -294,36 +294,22 @@ h6 {
   font-family: "Norse";
 }
 
-p {
-  font-size: 1.5em;
+.product {
+  border-radius: 30px;
+  padding: 15px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-h1 {
-  font-size: 5em;
-  font-weight: bold;
+.product:hover {
+  -webkit-box-shadow: 0px 0px 10px #646464;
+          box-shadow: 0px 0px 10px #646464;
 }
-
-.rock {
-  background-image: url("../img/rock.jpg");
-}
-
-.woods {
-  background-image: url("../img/woods.jpg");
-}
-
-.opalan {
-  background-image: url("../img/opal.jpg");
-  height: 600px !important;
-}
-
-.parallax {
-  /* The image used */
-  /* Set a specific height */
-  height: 400px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-/*# sourceMappingURL=about.css.map */
+/*# sourceMappingURL=product.css.map */

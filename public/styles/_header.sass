@@ -37,6 +37,7 @@
     display: flex !important
   .shoppingCart
     display: flex !important
+    width: 20%
 
 @media (min-width: 768px)
   nav
@@ -76,5 +77,16 @@ header
 .navbar-toggler
   display: none
 
+nav
+  .container-fluid
+    a
+      text-decoration: none
+
 .shoppingCart
   display: none
+
+.fa.fa-shopping-cart
+  width: 100%
+  color: $titlesColor
+  &:hover
+    color: $grayBorders
