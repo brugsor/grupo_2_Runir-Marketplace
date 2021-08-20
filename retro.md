@@ -8,7 +8,7 @@ We managed to establish good lines of communication using WhatsApp and Slack. Th
 
 ## Sprint 2 - HTML + CSS
 
-> Fill in after Sprint 2...
+We definitely faced some schedule problems that made it hard for all of us to connect to our desired dailies. It was also hard to get everyone to manage the technologies (git and sass). We are going to work harder in scheduling our meetings so that everybody can attend and be compromised with the sprint objectives.
 
 ## Sprint 3 - Template Engines
 
