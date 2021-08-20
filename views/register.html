@@ -41,80 +41,77 @@
     logged_out_greeting="Hola!! Escríbenos para solicitar más información!">
   </div>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img width="100px" src="/img/logo_sepia-min.png" />
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" href="/">INICIO</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ŌTHALAN.html">OTHALAN</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="FEINGUR.html">FEINGUR</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="HÆGL.html">HÆGL</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/cart">CARRITO</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/register">REGISTRO</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://instagram.com/runir_mead?igshid=e34t3mv99lv7">CONTACTO</a>
-          </li>
-        </ul>
+  <header>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img width="100vw" src="/img/logoCabin.png" />
+          <img width="100vw" src="/img/runirName.png" alt="Rúnir">
+        </a>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Busca en Rúnir.com" aria-label="Search">
+          <button class="btn btn-outline-secondary" type="submit"><i class="fa fa-search"
+              aria-hidden="true"></i></button>
+        </form>
+        <a class="shoppingCart" href="./cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./login">INGRESAR</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./register">REGÍSTRATE</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
+
   <div class="rock-bg">
     <br />
     <section class="section-form">
-        <div class="div-form">
-            <h1 class="h-title">Registro</h1>
-            <div class="div-form-son">
-                <form class="class-form" method="POST" action="/">
-                    <label for="form-input1" class="label-input"><i class="fas fa-user"></i> Usuario</label>
-                    <input type="input" id="form-input1" class="class-input" placeholder="Usuario...">
-                    <label for="form-input2" class="label-input"><i class="fas fa-at"></i> E-mail</label>
-                    <input type="email" id="form-input2" class="class-input" placeholder="E-mail...">
-                    <label for="form-input3" class="label-input"><i class="fas fa-key"></i> Contraseña</label>
-                    <input type="password" id="form-input3" class="class-input" placeholder="Contraseña...">
-                    <label for="form-input4" class="label-input"><i class="fas fa-key"></i> Confirme contraseña</label>
-                    <input type="password" id="form-input4" class="class-input" placeholder="Contraseña...">
-                    <label for="form-input5" class="label-input"><i class="fas fa-calendar-week"></i> Fecha de nacimiento</label>
-                    <input type="date" id="form-input5" class="class-input">
-                    <button class="btn-form" input="submit"><i class="fas fa-check-circle"></i>  Confirmar</button>
-                </form>
-            </div>
-        </div>
-    </section>
-</div>
-  <footer class="mt-auto">
-    <div class="container h-100">
-      <div class="row align-items-center h-100">
-        <div class="col-sm-12 col-md-4 text-left">
-          <span>TODOS NUESTROS PRODUCTOS SON PARA MAYORES DE EDAD. EVITA EL EXCESO.</span>
-        </div>
-        <div class="col-sm-12 col-md-4 text-center">
-          <a href="https://fb.me/runirmx"> <i class="fab fa-facebook"></i> </a>
-          <a href="https://www.instagram.com/runir_mead/"> <i class="fab fa-instagram"></i> </a>
-          <!--<a href="#"> <i class="fab fa-whatsapp"></i> </a>-->
-        </div>
-        <div class="col-sm-12 col-md-4 text-right">
-          <a href="#">Aviso de privacidad</a>
+      <div class="div-form">
+        <h1 class="h-title">Registro</h1>
+        <div class="div-form-son">
+          <form class="class-form" method="POST" action="/">
+            <label for="form-input1" class="label-input"><i class="fas fa-user"></i> Usuario</label>
+            <input type="input" id="form-input1" class="class-input" placeholder="Usuario...">
+            <label for="form-input2" class="label-input"><i class="fas fa-at"></i> E-mail</label>
+            <input type="email" id="form-input2" class="class-input" placeholder="E-mail...">
+            <label for="form-input3" class="label-input"><i class="fas fa-key"></i> Contraseña</label>
+            <input type="password" id="form-input3" class="class-input" placeholder="Contraseña...">
+            <label for="form-input4" class="label-input"><i class="fas fa-key"></i> Confirme contraseña</label>
+            <input type="password" id="form-input4" class="class-input" placeholder="Contraseña...">
+            <label for="form-input5" class="label-input"><i class="fas fa-calendar-week"></i> Fecha de
+              nacimiento</label>
+            <input type="date" id="form-input5" class="class-input">
+            <button class="btn-form" input="submit"><i class="fas fa-check-circle"></i> Confirmar</button>
+          </form>
         </div>
       </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="ageWarning">
+      <p>TODOS NUESTROS PRODUCTOS SON PARA MAYORES DE EDAD</p>
+      <p>EVITA EL EXCESO</p>
+    </div>
+    <div class="contact">
+      <a href="https://fb.me/runirmx"> <i class="fab fa-facebook"></i> </a>
+      <a href="https://www.instagram.com/runir_mead/"> <i class="fab fa-instagram"></i> </a>
+      <a href="#"> <i class="fab fa-whatsapp"></i> </a>
+    </div>
+    <div class="privacy">
+      <p><a href="#">Aviso de privacidad</a> | <a href="#">Aviso de privacidad</a></p>
     </div>
   </footer>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
@@ -126,16 +123,6 @@
     }
   </script>
 
-
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="/__/firebase/8.1.2/firebase-app.js"></script>
-
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="/__/firebase/8.1.2/firebase-analytics.js"></script>
-
-  <!-- Initialize Firebase -->
-  <script src="/__/firebase/init.js"></script>
 </body>
 
 </html>
