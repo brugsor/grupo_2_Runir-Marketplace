@@ -1,10 +1,92 @@
+@import ./_colors
+@import ./_fonts
+
+@media (min-width: 361px)
+  .main
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    justify-content: space-between
+  .mobile-nav
+    display: none !important
+
+@media (min-width: 600px)
+  nav
+    display: flex !important
+    justify-content: space-evenly
+    flex-wrap: nowrap
+    padding-bottom: 10px
+    ul
+      padding: 0px
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      justify-content: space-evenly
+      li
+        padding: 5px
+        list-style-type: none
+        a
+          color: $titlesColor
+          text-decoration: none
+  .main
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    justify-content: space-between
+  .navbar-toggler
+    display: flex !important
+  .shoppingCart
+    display: flex !important
+    width: 20%
+
+@media (min-width: 768px)
+  nav
+    flex-direction: row
+    ul
+      flex-direction: row
+
 .bg-light
   background-color: rgba(255, 231, 195, 0) !important
 
 .navbar-light .navbar-nav .nav-link.active
-  color: #b4714a !important
+  color: $blackText !important
 
 .navbar-light .navbar-nav .nav-link
-  color: #af8f7d !important
+  color: $titlesColor !important
   font-family: "Norse"
   font-size: 1.5em
+  justify-items: flex-end
+
+header
+  display: flex
+  box-sizing: border-box
+  width: 100vw
+  justify-content: space-evenly
+  .container-fluid
+    width: 100vw
+    justify-content: space-evenly
+
+.mobile-nav
+  display: flex
+  box-sizing: border-box
+  justify-content: space-evenly
+  position: fixed
+  bottom: 0px
+  height: 100px
+
+.navbar-toggler
+  display: none
+
+nav
+  .container-fluid
+    a
+      text-decoration: none
+
+.shoppingCart
+  display: none
+
+.fa.fa-shopping-cart
+  width: 100%
+  color: $titlesColor
+  &:hover
+    color: $grayBorders
