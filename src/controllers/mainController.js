@@ -1,5 +1,5 @@
 // Creating data source
-const products = [
+const productCollection = [
   {
     id: "feingur750",
     name: "FEINGUR",
@@ -71,33 +71,33 @@ const offers = [
 // Actions for every route
 const mainController = {
   index: (req, res) => {
-    res.render("index", {
-      showroom: products,
+    res.render("./products/index", {
+      showRoom: productCollection,
     });
   },
   register: (req, res) => {
-    res.render("register", {});
+    res.render("./users/register", {});
   },
   login: (req, res) => {
-    res.render("login", {});
+    res.render("./users/login", {});
   },
   product: (req, res) => {
-    res.render("product", {});
+    res.render("./products/product", {});
   },
   create: (req, res) => {
-    res.render("create", {});
+    res.render("./products/create", {});
   },
   edit: (req, res) => {
-    res.render("edit", {});
+    res.render("./products/edit", {});
   },
   about: (req, res) => {
-    res.render("about", {});
+    res.render("./products/about", {});
   },
   cart: (req, res) => {
-    res.render("cart", {});
+    res.render("./users/cart", {});
   },
   profile: (req, res) => {
-    res.render("profile", {});
+    res.render("./users/profile", {});
   },
 };
 

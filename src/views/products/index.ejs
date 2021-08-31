@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%- include 'partials/head' %>
+<%- include ('../partials/head') %>
 
   <body class="d-flex flex-column min-vh-100">
-    <%- include 'partials/social' %>
+    <%- include ('../partials/social') %>
 
-      <%- include 'partials/header' %>
+      <%- include ('../partials/header') %>
 
-        <%- include 'partials/offers' %>
+        <%- include ('../partials/offers') %>
 
           <main>
             <div class="items" id="showRoom">
@@ -16,7 +16,7 @@
                 <a class="product" href="/detalle/<%= product.id %>">
                   <article>
                     <div>
-                      <img src="/img/<%= products.img %>" width="100%" alt="<%= product.title %>">
+                      <img src="/img/<%= product.img %>" width="100%" alt="<%= product.name %>">
                     </div>
                     <div class="details">
                       <p class="precio">
@@ -24,7 +24,7 @@
                       </p>
                     </div>
                     <p class="descripcion">
-                      <%= product.title %>
+                      <%= product.name %>
                     </p>
                   </article>
                 </a>
@@ -32,7 +32,7 @@
             </div>
           </main>
 
-          <%- include 'partials/footer' %>
+          <%- include ('../partials/footer') %>
 
   </body>
 
