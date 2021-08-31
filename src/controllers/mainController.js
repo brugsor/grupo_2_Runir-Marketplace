@@ -1,4 +1,4 @@
-// Crating data source
+// Creating data source
 const products = [
   {
     id: "ProductId",
