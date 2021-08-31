@@ -1,85 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <link rel="stylesheet" href="/styles/login.css" />
-  <link rel="stylesheet" href="/fonts/fontawesome-all.min.css" />
-  <link rel="stylesheet" href="/fonts/font-awesome.min.css" />
-  <link rel="stylesheet" href="/fonts/ionicons.min.css" />
-  <link rel="stylesheet" href="/fonts/fontawesome5-overrides.min.css" />
-  <title>Rúnir</title>
-</head>
+<%- include 'partials/head' %>
 
-<header>
-  <nav class="navbar navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="./">
-        <img width="100vw" src="/img/logoCabin.png" />
-        <img width="100vw" src="/img/runirName.png" alt="Rúnir">
-      </a>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Busca en Rúnir.com" aria-label="Search">
-        <button class="btn btn-outline-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-      </form>
-      <a class="shoppingCart" href="./cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link" href="./">INICIO</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">INGRESAR</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./register">REGÍSTRATE</a>
-          </li>
-        </ul>
+  <header>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./">
+          <img width="100vw" src="/img/logoCabin.png" />
+          <img width="100vw" src="/img/runirName.png" alt="Rúnir">
+        </a>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Busca en Rúnir.com" aria-label="Search">
+          <button class="btn btn-outline-secondary" type="submit"><i class="fa fa-search"
+              aria-hidden="true"></i></button>
+        </form>
+        <a class="shoppingCart" href="./cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" href="./">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">INGRESAR</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./register">REGÍSTRATE</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
+  </header>
+
+  <main class="login">
+    <div><input type="text" class="text-input" placeholder="Correo electrónico o usuario"></div>
+    <div><input type="password" class="text-input" placeholder="Contraseña"></div>
+    <div><button type="button" value="Iniciar sesión" class="ingresar">Iniciar sesión</button></div>
+    <div><a href="#"> ¿Olvidaste tu contraseña?</a></div>
+    <div>Si aún no eres cliente:</div>
+    <div><a href="register.html"> Registrate aquí</a></div>
+  </main>
+
+
+  <footer>
+    <div class="ageWarning">
+      <p>TODOS NUESTROS PRODUCTOS SON PARA MAYORES DE EDAD</p>
+      <p>EVITA EL EXCESO</p>
     </div>
-  </nav>
-</header>
+    <div class="contact">
+      <a href="https://fb.me/runirmx"> <i class="fab fa-facebook"></i> </a>
+      <a href="https://www.instagram.com/runir_mead/"> <i class="fab fa-instagram"></i> </a>
+      <!--<a href="#"> <i class="fab fa-whatsapp"></i> </a>-->
+    </div>
+    <div class="privacy">
+      <a href="#">Aviso de privacidad</a>
+    </div>
+  </footer>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
+    integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD"
+    crossorigin="anonymous"></script>
+  <script>
+    if (!("ontouchstart" in document.documentElement)) {
+      document.documentElement.className += " no-touch";
+    }
+  </script>
 
-<main class="login">
-  <div><input type="text" class="text-input" placeholder="Correo electrónico o usuario"></div>
-  <div><input type="password" class="text-input" placeholder="Contraseña"></div>
-  <div><button type="button" value="Iniciar sesión" class="ingresar">Iniciar sesión</button></div>
-  <div><a href="#"> ¿Olvidaste tu contraseña?</a></div>
-  <div>Si aún no eres cliente:</div>
-  <div><a href="register.html"> Registrate aquí</a></div>
-</main>
-
-
-<footer>
-  <div class="ageWarning">
-    <p>TODOS NUESTROS PRODUCTOS SON PARA MAYORES DE EDAD</p>
-    <p>EVITA EL EXCESO</p>
-  </div>
-  <div class="contact">
-    <a href="https://fb.me/runirmx"> <i class="fab fa-facebook"></i> </a>
-    <a href="https://www.instagram.com/runir_mead/"> <i class="fab fa-instagram"></i> </a>
-    <!--<a href="#"> <i class="fab fa-whatsapp"></i> </a>-->
-  </div>
-  <div class="privacy">
-    <a href="#">Aviso de privacidad</a>
-  </div>
-</footer>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
-  integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
-<script>
-  if (!("ontouchstart" in document.documentElement)) {
-    document.documentElement.className += " no-touch";
-  }
-</script>
-
-</body>
+  </body>
 
 </html>

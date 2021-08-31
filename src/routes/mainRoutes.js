@@ -11,31 +11,23 @@ router.get("/", mainController.index);
 // GET /home
 router.get("/home", mainController.index);
 
-// Path /"root"
-router.get("/home", mainController.index);
+/* GET register */
+router.get("/register", mainController.register);
 
-// Path /login
-app.get("/login", (req, res) => {
-  res.sendFile(path.resolve("./views/login.html"));
-});
+/* GET login */
+router.get("/login", mainController.login);
 
-// Path /register
-app.get("/register", (req, res) => {
-  res.sendFile(path.resolve("./views/register.html"));
-});
+/* GET about */
+router.get("/about", mainController.about);
 
-// Path /register
-app.get("/cart", (req, res) => {
-  res.sendFile(path.resolve("./views/cart.html"));
-});
+// Path /cart
+router.get("/cart", mainController.cart);
 
 // Path /product:productId
-app.get("/product:productId", (req, res) => {
-  res.sendFile(path.resolve("./views/product.html"));
-});
+router.get("/product", mainController.product);
 
 // Path 404 ¿?
-app.get("*", (req, res) => {
+router.get("*", (req, res) => {
   res.status(404).send("404 not found. <br> ¡Odin, guíanos a nuestro destino!");
 });
 

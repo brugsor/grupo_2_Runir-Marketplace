@@ -1,28 +1,95 @@
 // Crating data source
-const about = {
-  titulo: "Pimienta & Sal",
-  descripcion: "Lorem ipsum...",
-  historia: "Lorem ipsum...",
-};
+const products = [
+  {
+    id: "ProductId",
+    name: "Pimienta & Sal",
+    price: "Lorem ipsum...",
+    description: "Lorem ipsum...",
+  },
+  {
+    id: "ProductId",
+    name: "Pimienta & Sal",
+    price: "Lorem ipsum...",
+    description: "Lorem ipsum...",
+  },
+  {
+    id: "ProductId",
+    name: "Pimienta & Sal",
+    price: "Lorem ipsum...",
+    description: "Lorem ipsum...",
+  },
+  {
+    id: "ProductId",
+    name: "Pimienta & Sal",
+    price: "Lorem ipsum...",
+    description: "Lorem ipsum...",
+  },
+  {
+    id: "ProductId",
+    name: "Pimienta & Sal",
+    price: "Lorem ipsum...",
+    description: "Lorem ipsum...",
+  },
+];
 
-// Acá nos falta un objeto literal con las acciones para cada ruta
+const offers = [
+  {
+    id: "ProductId",
+    name: "Pimienta & Sal",
+    price: "Lorem ipsum...",
+    description: "Lorem ipsum...",
+  },
+  {
+    id: "ProductId",
+    name: "Pimienta & Sal",
+    price: "Lorem ipsum...",
+    description: "Lorem ipsum...",
+  },
+  {
+    id: "ProductId",
+    name: "Pimienta & Sal",
+    price: "Lorem ipsum...",
+    description: "Lorem ipsum...",
+  },
+  {
+    id: "ProductId",
+    name: "Pimienta & Sal",
+    price: "Lorem ipsum...",
+    description: "Lorem ipsum...",
+  },
+  {
+    id: "ProductId",
+    name: "Pimienta & Sal",
+    price: "Lorem ipsum...",
+    description: "Lorem ipsum...",
+  },
+];
 
-// Acá exportamos el resultado
+// Actions for every route
 const mainController = {
   index: (req, res) => {
-    res.render("index", {
-      about: about,
-      products: products,
-    });
+    res.render("index", {});
   },
-  detail: (req, res) => {
-    let productDetails = listaPlatos.find(
-      (product) => product.id == req.params.menuId
-    );
-    console.log(plato);
-    res.render("detalleMenu", {
-      plato: plato,
-    });
+  register: (req, res) => {
+    res.render("register", {});
+  },
+  login: (req, res) => {
+    res.render("login", {});
+  },
+  product: (req, res) => {
+    res.render("product", {});
+  },
+  create: (req, res) => {
+    res.render("create", {});
+  },
+  edit: (req, res) => {
+    res.render("edit", {});
+  },
+  about: (req, res) => {
+    res.render("about", {});
+  },
+  cart: (req, res) => {
+    res.render("cart", {});
   },
 };
 

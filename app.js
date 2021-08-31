@@ -8,6 +8,7 @@ const publicPath = path.resolve(__dirname, "./public");
 app.use(express.static(publicPath));
 
 // Setting the view engine
+app.set("views", path.join(__dirname, "./src/views"));
 app.set("view engine", "ejs");
 
 // Setting all routes to be obtained from the routes file
