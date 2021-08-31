@@ -23,8 +23,11 @@ router.get("/about", mainController.about);
 // Path /cart
 router.get("/cart", mainController.cart);
 
-// Path /product:productId
+// Path /product
 router.get("/product", mainController.product);
+
+// Path /profile
+router.get("/profile", mainController.profile);
 
 // Path 404 ¿?
 router.get("*", (req, res) => {

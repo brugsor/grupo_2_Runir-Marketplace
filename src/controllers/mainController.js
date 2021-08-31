@@ -1,34 +1,32 @@
 // Creating data source
 const products = [
   {
-    id: "ProductId",
-    name: "Pimienta & Sal",
-    price: "Lorem ipsum...",
+    id: "feingur750",
+    name: "FEINGUR",
+    price: 260,
     description: "Lorem ipsum...",
+    img: "feingur.jpg",
   },
   {
-    id: "ProductId",
-    name: "Pimienta & Sal",
-    price: "Lorem ipsum...",
+    id: "othalan750",
+    name: "ŌÞALAN",
+    price: 260,
     description: "Lorem ipsum...",
+    img: "othalan.jpg",
   },
   {
-    id: "ProductId",
-    name: "Pimienta & Sal",
-    price: "Lorem ipsum...",
+    id: "haegl750",
+    name: "HÆGL",
+    price: 260,
     description: "Lorem ipsum...",
+    img: "haegl.jpg",
   },
   {
-    id: "ProductId",
-    name: "Pimienta & Sal",
-    price: "Lorem ipsum...",
+    id: "draumstafir750",
+    name: "DRAUMSTAFIR",
+    price: 260,
     description: "Lorem ipsum...",
-  },
-  {
-    id: "ProductId",
-    name: "Pimienta & Sal",
-    price: "Lorem ipsum...",
-    description: "Lorem ipsum...",
+    img: "draum.jpg",
   },
 ];
 
@@ -38,37 +36,44 @@ const offers = [
     name: "Pimienta & Sal",
     price: "Lorem ipsum...",
     description: "Lorem ipsum...",
+    img: "barril.jpeg",
   },
   {
     id: "ProductId",
     name: "Pimienta & Sal",
     price: "Lorem ipsum...",
     description: "Lorem ipsum...",
+    img: "barril.jpeg",
   },
   {
     id: "ProductId",
     name: "Pimienta & Sal",
     price: "Lorem ipsum...",
     description: "Lorem ipsum...",
+    img: "barril.jpeg",
   },
   {
     id: "ProductId",
     name: "Pimienta & Sal",
     price: "Lorem ipsum...",
     description: "Lorem ipsum...",
+    img: "barril.jpeg",
   },
   {
     id: "ProductId",
     name: "Pimienta & Sal",
     price: "Lorem ipsum...",
     description: "Lorem ipsum...",
+    img: "barril.jpeg",
   },
 ];
 
 // Actions for every route
 const mainController = {
   index: (req, res) => {
-    res.render("index", {});
+    res.render("index", {
+      showroom: products,
+    });
   },
   register: (req, res) => {
     res.render("register", {});
@@ -90,6 +95,9 @@ const mainController = {
   },
   cart: (req, res) => {
     res.render("cart", {});
+  },
+  profile: (req, res) => {
+    res.render("profile", {});
   },
 };
 
