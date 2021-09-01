@@ -191,6 +191,7 @@ nav .container-fluid a {
 }
 
 .fa.fa-shopping-cart {
+  font-size: 35px;
   width: 100%;
   color: #706563;
 }
