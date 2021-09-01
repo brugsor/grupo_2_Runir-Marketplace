@@ -30,44 +30,6 @@ const productCollection = [
   },
 ];
 
-const offers = [
-  {
-    id: "ProductId",
-    name: "Pimienta & Sal",
-    price: "Lorem ipsum...",
-    description: "Lorem ipsum...",
-    img: "barril.jpeg",
-  },
-  {
-    id: "ProductId",
-    name: "Pimienta & Sal",
-    price: "Lorem ipsum...",
-    description: "Lorem ipsum...",
-    img: "barril.jpeg",
-  },
-  {
-    id: "ProductId",
-    name: "Pimienta & Sal",
-    price: "Lorem ipsum...",
-    description: "Lorem ipsum...",
-    img: "barril.jpeg",
-  },
-  {
-    id: "ProductId",
-    name: "Pimienta & Sal",
-    price: "Lorem ipsum...",
-    description: "Lorem ipsum...",
-    img: "barril.jpeg",
-  },
-  {
-    id: "ProductId",
-    name: "Pimienta & Sal",
-    price: "Lorem ipsum...",
-    description: "Lorem ipsum...",
-    img: "barril.jpeg",
-  },
-];
-
 // Actions for every route
 const mainController = {
   index: (req, res) => {
@@ -85,10 +47,10 @@ const mainController = {
     res.render("./products/product", {});
   },
   create: (req, res) => {
-    res.render("./products/create", {});
+    res.render("./products/create-edit", {});
   },
   edit: (req, res) => {
-    res.render("./products/edit", {});
+    res.render("./products/create-edit", {});
   },
   about: (req, res) => {
     res.render("./products/about", {});

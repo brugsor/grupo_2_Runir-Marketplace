@@ -10,6 +10,8 @@ const mainController = require("../controllers/mainController");
 router.get("/", mainController.index);
 // GET /home
 router.get("/home", mainController.index);
+// GET /index
+router.get("/index", mainController.index);
 
 /* GET register */
 router.get("/register", mainController.register);
@@ -25,6 +27,12 @@ router.get("/cart", mainController.cart);
 
 // Path /product
 router.get("/product", mainController.product);
+
+// Path /create
+router.get("/create", mainController.create);
+
+// Path /edit
+router.get("/edit", mainController.create);
 
 // Path /profile
 router.get("/profile", mainController.profile);
