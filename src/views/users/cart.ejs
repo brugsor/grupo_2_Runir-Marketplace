@@ -28,39 +28,7 @@
       logged_out_greeting="Hola!! Escríbenos para solicitar más información!">
     </div>
 
-    <header>
-      <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img width="100vw" src="/img/logoCabin.png" />
-            <img width="100vw" src="/img/runirName.png" alt="Rúnir">
-          </a>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Busca en Rúnir.com" aria-label="Search">
-            <button class="btn btn-outline-secondary" type="submit"><i class="fa fa-search"
-                aria-hidden="true"></i></button>
-          </form>
-          <a class="shoppingCart" href="./cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./">INICIO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./login">INGRESAR</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./register">REGÍSTRATE</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+    <%- include ('../partials/header') %>
 
     <div class="woods-bg">
       <br /><br />
@@ -76,7 +44,7 @@
                   <p class="pd-product">FEINGUR</p>
                 </div>
                 <div class="div-details"><br />
-                  <p class="pd-price">$999</p><br />
+                  <p class="pd-price">$260</p><br />
                   <input type="number" placeholder="Cantidad" class="number_hidro" name="number_hidro" min="1" max="99"
                     style="width:90px">
                 </div>
@@ -90,7 +58,7 @@
                   <p class="pd-product">HÆGL</p>
                 </div>
                 <div class="div-details"><br />
-                  <p class="pd-price">$999</p><br />
+                  <p class="pd-price">$260</p><br />
                   <input type="number" placeholder="Cantidad" class="number_hidro" name="number_hidro" min="1" max="99"
                     style="width:90px">
                 </div><br />
@@ -99,6 +67,7 @@
             </div><br />
           </div>
         </section>
+        
         <section class="section-total">
           <div class="div-total">
             <h1 class="h-title">Total</h1>
@@ -106,11 +75,11 @@
               <div class="div-total-son">
                 <div class="dp-total">
                   <p>Total:</p>
-                  <p style="color: #4da395;">$1998</p>
+                  <p style="color: #4da395; font-size: 25px;">$520</p>
                 </div>
                 <div class="dp-total">
                   <p>Producto(s):</p>
-                  <p style="color: #4da395;">2</p>
+                  <p style="color: #4da395; font-size: 25px;">2</p>
                 </div>
               </div>
               <button class="btn-total" input="submit"><i class="fas fa-check-circle"></i> Confirmar</button>
@@ -120,20 +89,8 @@
       </section><br /><br />
     </div>
 
-    <footer>
-      <div class="ageWarning">
-        <p>TODOS NUESTROS PRODUCTOS SON PARA MAYORES DE EDAD</p>
-        <p>EVITA EL EXCESO</p>
-      </div>
-      <div class="contact">
-        <a href="https://fb.me/runirmx"> <i class="fab fa-facebook"></i> </a>
-        <a href="https://www.instagram.com/runir_mead/"> <i class="fab fa-instagram"></i> </a>
-        <a href="#"> <i class="fab fa-whatsapp"></i> </a>
-      </div>
-      <div class="privacy">
-        <p><a href="#">Aviso de privacidad</a> | <a href="#">Aviso de privacidad</a></p>
-      </div>
-    </footer>
+    <%- include ('../partials/footer') %>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
       integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD"
       crossorigin="anonymous"></script>
