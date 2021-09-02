@@ -3,6 +3,14 @@
 
 <%- include ('../partials/head') %>
 
+<body class="d-flex flex-column min-vh-100">
+
+<%- include ('../partials/social') %>
+
+<%- include ('../partials/header') %>
+
+
+<!--
   <header>
     <nav class="navbar navbar-light bg-light">
       <div class="container-fluid">
@@ -36,17 +44,20 @@
       </div>
     </nav>
   </header>
-
+-->
   <main class="login">
+    <label for="form-input1" class="label-input"><i class="fas fa-user"></i> Usuario</label>
     <div><input type="text" class="text-input" placeholder="Correo electrónico o usuario"></div>
+    <label for="form-input3" class="label-input"><i class="fas fa-key"></i> Contraseña</label>
     <div><input type="password" class="text-input" placeholder="Contraseña"></div>
-    <div><button type="button" value="Iniciar sesión" class="ingresar">Iniciar sesión</button></div>
+    <div><button type="button" input="submit" class="ingresar">Iniciar sesión</button></div>
     <div><a href="#"> ¿Olvidaste tu contraseña?</a></div>
     <div>Si aún no eres cliente:</div>
     <div><a href="register.html"> Registrate aquí</a></div>
   </main>
 
-
+  <%- include ('../partials/footer') %>
+  <!--
   <footer>
     <div class="ageWarning">
       <p>TODOS NUESTROS PRODUCTOS SON PARA MAYORES DE EDAD</p>
@@ -55,12 +66,13 @@
     <div class="contact">
       <a href="https://fb.me/runirmx"> <i class="fab fa-facebook"></i> </a>
       <a href="https://www.instagram.com/runir_mead/"> <i class="fab fa-instagram"></i> </a>
-      <!--<a href="#"> <i class="fab fa-whatsapp"></i> </a>-->
+      <a href="#"> <i class="fab fa-whatsapp"></i> </a>
     </div>
     <div class="privacy">
       <a href="#">Aviso de privacidad</a>
     </div>
   </footer>
+-->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
     integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD"
     crossorigin="anonymous"></script>
