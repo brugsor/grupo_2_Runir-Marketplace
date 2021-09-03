@@ -1,8 +1,8 @@
-const fs = require("fs");
-const path = require("path");
+// const fs = require("fs");
+// const path = require("path");
 
-const productsFilePath = path.join(__dirname, "../data/productsDB.json");
-const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+// const productsFilePath = path.join(__dirname, "../data/productsDB.json");
+// const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 
 // Creating data source
 const productCollection = [
@@ -76,14 +76,10 @@ const mainController = {
       item: item,
     });
   },
-  create: (req, res) => {
+  createEdit: (req, res) => {
     res.render("./products/create-edit", {
+      showRoom: productCollection,
       style: styles.createEdit,
-    });
-  },
-  edit: (req, res) => {
-    res.render("./products/create-edit", {
-      style: styles.create - edit,
     });
   },
   about: (req, res) => {
