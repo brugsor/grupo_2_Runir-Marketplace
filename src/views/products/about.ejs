@@ -4,209 +4,138 @@
 <%- include ('../partials/head') %>
 
   <body class="d-flex flex-column min-vh-100">
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script>
-      window.fbAsyncInit = function () {
-        FB.init({
-          xfbml: true,
-          version: 'v9.0'
-        });
-      };
+    <%- include ('../partials/social') %>
 
-      (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
+      <%- include ('../partials/header') %>
 
-    <!-- Your Chat Plugin code -->
-    <div class="fb-customerchat" attribution=setup_tool page_id="101757705041113"
-      logged_in_greeting="Hola! Escríbenos para solicitar más información!"
-      logged_out_greeting="Hola! Escríbenos para solicitar más información!">
-    </div>
+        <div class="main">
+          <br />
+          <br />
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h1 class="text-center">¿Quiénes Somos?</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <p>
+                  Rúnir, el nombre de nuestra familia, significa “runas” en islandés.
+                  Nuestro concepto de marca busca rescatar la sabiduría de los ancestrales símbolos rúnicos, las
+                  maravillas
+                  de
+                  la naturaleza nórdica en sus distintas fases y lo acogedor de las tradicionales cabañas islandesas.
 
-    <header>
-      <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img width="100vw" src="/img/logoCabin.png" />
-            <img width="100vw" src="/img/runirName.png" alt="Rúnir">
-          </a>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Busca en Rúnir.com" aria-label="Search">
-            <button class="btn btn-outline-secondary" type="submit"><i class="fa fa-search"
-                aria-hidden="true"></i></button>
-          </form>
-          <a class="shoppingCart" href="./cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">INICIO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./login">INGRESAR</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./register">REGÍSTRATE</a>
-              </li>
-            </ul>
+                </p>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <img src="/img/logo_sepia-min.png" class="img-fluid" style="max-height: 300px;" />
+              </div>
+            </div>
           </div>
-        </div>
-      </nav>
-    </header>
-
-    <div class="main">
-      <br />
-      <br />
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h1 class="text-center">¿Quiénes Somos?</h1>
+          <div class="parallax rock"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <br />
+                <br />
+                <h1 class="text-center">¿Qué es hidromiel?</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <p>
+                  La hidromiel es una bebida nórdica ancestral, precursora al vino y la cerveza, considerada el fermento
+                  más
+                  antiguo de la humanidad.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <p>
-              Rúnir, el nombre de nuestra familia, significa “runas” en islandés.
-              Nuestro concepto de marca busca rescatar la sabiduría de los ancestrales símbolos rúnicos, las maravillas
-              de
-              la naturaleza nórdica en sus distintas fases y lo acogedor de las tradicionales cabañas islandesas.
-
-            </p>
+          <div class="parallax woods"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <br />
+                <br />
+                <h1 class="text-center">Familia Rúnir</h1>
+              </div>
+            </div>
+            <div>
+              <p>Nuestra presentación principal es en botellas de vidrio de 750ml cerradas con corcho y sello lacrado.
+                Cada
+                botella se encuentra acompañada de su respectiva runa de madera pirograbada a mano.</p>
+            </div>
           </div>
-          <div class="col-sm-12 col-md-6">
-            <img src="/img/logo_sepia-min.png" class="img-fluid" style="max-height: 300px;" />
-          </div>
-        </div>
-      </div>
-      <div class="parallax rock"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <br />
-            <br />
-            <h1 class="text-center">¿Qué es hidromiel?</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <p>
-              La hidromiel es una bebida nórdica ancestral, precursora al vino y la cerveza, considerada el fermento más
-              antiguo de la humanidad.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="parallax woods"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <br />
-            <br />
-            <h1 class="text-center">Familia Rúnir</h1>
-          </div>
-        </div>
-        <div>
-          <p>Nuestra presentación principal es en botellas de vidrio de 750ml cerradas con corcho y sello lacrado. Cada
-            botella se encuentra acompañada de su respectiva runa de madera pirograbada a mano.</p>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <br />
-            <br />
-            <h1 class="text-center">Familia Rúnir</h1>
-          </div>
-        </div>
-        <div>
-          <p>Nuestra presentación principal es en botellas de vidrio de 750ml cerradas con corcho y sello lacrado. Cada
-            botella se encuentra acompañada de su respectiva runa de madera pirograbada a mano.</p>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="accordion">
-              <ul>
-                <li tabindex="1">
-                  <div>
-                    <div>
-                      <h2>ŌTHALAN</h2>
-                      <p>Base de miel mantequilla con un sabor refrescante <br /> y afrutado (6.5% de alcohol).</p>
-                      <!--<a class="btn btn-outline-secondary" href="ŌTHALAN.html"
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <br />
+                <br />
+                <h1 class="text-center">Familia Rúnir</h1>
+              </div>
+            </div>
+            <div>
+              <p>Nuestra presentación principal es en botellas de vidrio de 750ml cerradas con corcho y sello lacrado.
+                Cada
+                botella se encuentra acompañada de su respectiva runa de madera pirograbada a mano.</p>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="accordion">
+                  <ul>
+                    <li tabindex="1">
+                      <div>
+                        <div>
+                          <h2>ŌTHALAN</h2>
+                          <p>Base de miel mantequilla con un sabor refrescante <br /> y afrutado (6.5% de alcohol).</p>
+                          <!--<a class="btn btn-outline-secondary" href="ŌTHALAN.html"
                         >Conoce más</a
                       >-->
-                    </div>
-                  </div>
-                </li>
-                <li tabindex="2">
-                  <div>
-                    <div>
-                      <h2>FEINGUR</h2>
-                      <p>Base de miel pura con un sabor dulce <br /> y ligeramente cítrico (9.5% de alcohol).</p>
-                      <!--<a class="btn btn-outline-secondary" href="feingur.html"
+                        </div>
+                      </div>
+                    </li>
+                    <li tabindex="2">
+                      <div>
+                        <div>
+                          <h2>FEINGUR</h2>
+                          <p>Base de miel pura con un sabor dulce <br /> y ligeramente cítrico (9.5% de alcohol).</p>
+                          <!--<a class="btn btn-outline-secondary" href="feingur.html"
                         >Conoce más</a
                       >-->
-                    </div>
-                  </div>
-                </li>
-                <li tabindex="3">
-                  <div>
-                    <div>
-                      <h2>HÆGL</h2>
-                      <p>Base de miel semi-tostada con un sabor seco <br /> y caramelizado (12% de alcohol).</p>
-                      <!--<a class="btn btn-outline-secondary" href="haegl.html"
+                        </div>
+                      </div>
+                    </li>
+                    <li tabindex="3">
+                      <div>
+                        <div>
+                          <h2>HÆGL</h2>
+                          <p>Base de miel semi-tostada con un sabor seco <br /> y caramelizado (12% de alcohol).</p>
+                          <!--<a class="btn btn-outline-secondary" href="haegl.html"
                         >Conoce más</a
                       >-->
-                    </div>
-                  </div>
-                </li>
-                <li tabindex="4">
-                  <div>
-                    <div>
-                      <h2>DRAUMSTAFIR</h2>
-                      <p>Base de miel pura con un sabor dulce <br /> y ligeramente cítrico (8% de alcohol).</p>
-                      <!--<a class="btn btn-outline-secondary" href="feingur.html"
+                        </div>
+                      </div>
+                    </li>
+                    <li tabindex="4">
+                      <div>
+                        <div>
+                          <h2>DRAUMSTAFIR</h2>
+                          <p>Base de miel pura con un sabor dulce <br /> y ligeramente cítrico (8% de alcohol).</p>
+                          <!--<a class="btn btn-outline-secondary" href="feingur.html"
                         >Conoce más</a
                       >-->
-                    </div>
-                  </div>
-                </li>
-              </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <footer>
-      <div class="ageWarning">
-        <p>TODOS NUESTROS PRODUCTOS SON PARA MAYORES DE EDAD</p>
-        <p>EVITA EL EXCESO</p>
-      </div>
-      <div class="contact">
-        <a href="https://fb.me/runirmx"> <i class="fab fa-facebook"></i> </a>
-        <a href="https://www.instagram.com/runir_mead/"> <i class="fab fa-instagram"></i> </a>
-        <!--<a href="#"> <i class="fab fa-whatsapp"></i> </a>-->
-      </div>
-      <div class="privacy">
-        <a href="#">Aviso de privacidad</a>
-      </div>
-    </footer>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
-      integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD"
-      crossorigin="anonymous"></script>
-    <script>
-      if (!("ontouchstart" in document.documentElement)) {
-        document.documentElement.className += " no-touch";
-      }
-    </script>
+        <%- include ('../partials/footer') %>
 
   </body>
 
