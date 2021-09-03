@@ -10,9 +10,9 @@
 
         <main class="container">
 
-          <!-- Left Column / Headphones Image -->
+          <!-- Left Column / Product Image -->
           <div class="left-column">
-            <img src="/img/feingur.jpg" alt="Feingur">
+            <img src="/img/<%= item.img %>" alt="Feingur">
           </div>
 
 
@@ -21,19 +21,17 @@
 
             <!-- Product Description -->
             <div class="product-description">
-              <span>Hidromiel Artesanal</span>
-              <h1>Feingur</h1>
-              <p>El sabor pleno a miel, espeso y con notas de polen de Feingur es conseguido con una levadura de Voss,
-                Noruega,
-                cuya cepa es preservada con métodos tradicionales de las granjas noruegas.
-
-                Feingur simbolizaba la fertilidad: la alegría del florecimiento, la vida de abundancia y la primavera
-                resplandeciente.</p>
+              <h1>
+                <%= item.name %>
+              </h1>
+              <p>
+                <%= item.description %>
+              </p>
             </div>
 
             <!-- Product Pricing -->
             <div class="product-price">
-              <span>$260.00 MXN</span>
+              <span>$<%= item.price %> MXN</span>
               <a href="#" class="cart-btn">Agregar al carrito</a>
             </div>
           </div>

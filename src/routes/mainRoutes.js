@@ -26,7 +26,7 @@ router.get("/about", mainController.about);
 router.get("/cart", mainController.cart);
 
 // Path /product
-router.get("/product", mainController.product);
+router.get("/product/:productId", mainController.product);
 
 // Path /create
 router.get("/create", mainController.create);
