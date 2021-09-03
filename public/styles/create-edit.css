@@ -644,6 +644,10 @@ main {
           justify-content: center;
 }
 
+.editOptions {
+  z-index: 10;
+}
+
 .product {
   background-color: #e4dfda;
   border-radius: 30px;

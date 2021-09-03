@@ -9,30 +9,28 @@
       <%- include ('../partials/header') %>
 
         <main>
-          <div>
+          <div class="row-md-8 text-center">
             <%- include ('../partials/product-create') %>
           </div>
           <div class="items" id="showRoom">
             <% showRoom.forEach(product=> { %>
-              <a class="product" href="./product/<%= product.id %>">
-                <article>
-                  <div>
-                    <%- include ('../partials/product-edit') %>
-                      <%- include ('../partials/product-delete') %>
-                  </div>
-                  <div>
-                    <img src="/img/<%= product.img %>" width="100%" alt="<%= product.name %>">
-                  </div>
-                  <div class="details">
-                    <p class="precio">
-                      $<%= product.price %>MXN
-                    </p>
-                  </div>
-                  <p class="descripcion">
-                    <%= product.name %>
+              <article class="product">
+                <div class="row-md-8 text-center editOptions">
+                  <%- include ('../partials/product-edit') %>
+                    <%- include ('../partials/product-delete') %>
+                </div>
+                <div>
+                  <img src="/img/<%= product.img %>" width="100%" alt="<%= product.name %>">
+                </div>
+                <div class="details">
+                  <p class="precio">
+                    $<%= product.price %>MXN
                   </p>
-                </article>
-              </a>
+                </div>
+                <p class="descripcion">
+                  <%= product.name %>
+                </p>
+              </article>
               <% }) %>
           </div>
         </main>
