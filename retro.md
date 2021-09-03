@@ -12,7 +12,7 @@ We definitely faced some schedule problems that made it hard for all of us to co
 
 ## Sprint 3 - Template Engines
 
-> Fill in after Sprint 3...
+> We had some issues with our CSS due there are many CSS files. We colaborate together to fix this. And we did it. Our CSS and EJS files work fine by now. And our pages have their styles once again.
 
 ## Sprint 4 - JSON and HTTP Methods
 
