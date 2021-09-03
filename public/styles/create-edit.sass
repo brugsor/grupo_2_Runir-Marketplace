@@ -1,0 +1,340 @@
+@import ./_fonts
+
+@import ./_colors
+
+@import ./_header
+
+@import ./_footer
+
+@import ./_body
+
+@media (min-width: 600px)
+  .offers
+    display: flex !important
+  .product
+    width: 40%
+
+@media (min-width: 768px)
+  .product
+    width: 20%
+
+p
+  font-size: 1.5em
+  font-family: "Norse"
+
+h1
+  font-size: 5em
+  font-weight: bold
+
+main
+  padding-bottom: 50px
+  margin-bottom: 20px
+
+.offers
+  display: none
+
+// Accordion Height
+$a-height: 500px
+
+// Position text along bottom
+$text-offset: $a-height - 200
+
+.accordion
+  width: 100vw
+  height: $a-height
+  overflow: hidden
+  margin: 50px auto
+
+  ul
+    width: 100%
+    display: table
+    table-layout: fixed
+    margin: 0
+    padding: 0
+
+    li
+      display: table-cell
+      vertical-align: bottom
+      position: relative
+      width: 33.3333vw // 6 into 100
+      height: $a-height
+
+      background-repeat: no-repeat
+      background-position: center center
+
+      transition: all 500ms ease
+
+      div
+        display: block
+        overflow: hidden
+        width: 100%
+
+        div
+          display: block
+          height: $a-height
+          width: 100%
+
+          position: relative
+          z-index: 3
+          vertical-align: bottom
+          padding: 15px 20px
+          box-sizing: border-box
+          color: #fff
+          text-decoration: none
+
+          transition: all 200ms ease
+
+          *
+            opacity: 0
+            margin: 0
+            width: 100%
+            text-overflow: ellipsis
+            position: relative
+            z-index: 5
+
+            white-space: nowrap
+            overflow: hidden
+
+            -webkit-transform: translateX(-20px)
+            transform: translateX(-20px)
+
+            -webkit-transition: all 400ms ease
+            transition: all 400ms ease
+
+          h2
+            text-overflow: clip
+            font-size: 3em
+            text-transform: uppercase
+            margin-bottom: 0.3em
+            top: $text-offset
+
+          p
+            top: $text-offset
+            font-size: 1.3em
+            margin-bottom: 0.5em
+
+          a
+            top: $text-offset
+            font-size: 1.3em
+            color: #fff
+            text-decoration: none
+            display: inline !important
+            margin-bottom: 0.5em
+
+    // Background images
+    li:nth-child(1)
+      background-image: url("/img/midsommar.jpeg")
+
+    li:nth-child(2)
+      background-image: url("/img/products.jpg")
+
+    li:nth-child(3)
+      background-image: url("/img/grasker.jpeg")
+
+    &:hover li,
+    &:focus-within li
+      width: 8%
+
+    li:focus
+      outline: none
+
+    &:hover li:hover,
+    // allow users to tab through active slides
+    li:focus,
+    &:focus-within li:focus
+      width: 50%
+
+      div
+        background: rgba(0, 0, 0, 0.4)
+
+        *
+          opacity: 1
+          -webkit-transform: translateX(0)
+          transform: translateX(0)
+
+    &:hover li
+      width: 20% !important
+
+      div *
+        opacity: 0 !important
+
+    &:hover li:hover
+      width: 50% !important
+
+      div
+        background: rgba(0, 0, 0, 0.4)
+
+        *
+          opacity: 1 !important
+          -webkit-transform: translateX(0)
+          transform: translateX(0)
+
+  &-opalan
+    width: 100%
+    max-width: 900px
+    height: $a-height
+    overflow: hidden
+    margin: 50px auto
+
+  ul
+    width: 100%
+    display: table
+    table-layout: fixed
+    margin: 0
+    padding: 0
+
+    li
+      display: table-cell
+      vertical-align: bottom
+      position: relative
+      width: 50%
+      height: $a-height
+
+      background-repeat: no-repeat
+      background-position: center center
+
+      transition: all 500ms ease
+
+      div
+        display: block
+        overflow: hidden
+        width: 100%
+
+        div
+          display: block
+          height: $a-height
+          width: 100%
+
+          position: relative
+          z-index: 3
+          vertical-align: bottom
+          padding: 15px 20px
+          box-sizing: border-box
+          color: #fff
+          text-decoration: none
+
+          transition: all 200ms ease
+
+          *
+            opacity: 0
+            margin: 0
+            width: 100%
+            text-overflow: ellipsis
+            position: relative
+            z-index: 5
+
+            white-space: nowrap
+            overflow: hidden
+
+            -webkit-transform: translateX(-20px)
+            transform: translateX(-20px)
+
+            -webkit-transition: all 400ms ease
+            transition: all 400ms ease
+
+          h2
+            text-overflow: clip
+            font-size: 3em
+            text-transform: uppercase
+            margin-bottom: 0.3em
+            top: $text-offset
+
+          p
+            top: $text-offset
+            font-size: 1.3em
+            margin-bottom: 0.5em
+
+          a
+            top: $text-offset
+            font-size: 1.3em
+            color: #fff
+            text-decoration: none
+            display: inline !important
+            margin-bottom: 0.5em
+
+    // Background images
+    li:nth-child(1)
+      background-image: url("/img/midsommar.jpeg")
+
+    li:nth-child(2)
+      background-image: url("/img/products.jpg")
+
+    li:nth-child(3)
+      background-image: url("/img/grasker.jpeg")
+
+    &:hover li,
+    &:focus-within li
+      width: 5%
+
+    li:focus
+      outline: none
+
+    &:hover li:hover,
+    // allow users to tab through active slides
+    li:focus,
+    &:focus-within li:focus
+      width: 7%
+
+      div
+        background: rgba(0, 0, 0, 0.4)
+
+        *
+          opacity: 1
+          -webkit-transform: translateX(0)
+          transform: translateX(0)
+
+    &:hover li
+      width: 20% !important
+
+      div *
+        opacity: 0 !important
+
+    &:hover li:hover
+      width: 50% !important
+
+      div
+        background: rgba(0, 0, 0, 0.4)
+
+        *
+          opacity: 1 !important
+          -webkit-transform: translateX(0)
+          transform: translateX(0)
+
+.items
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+
+.product
+  background-color: $lightBackground
+  border-radius: 30px
+  padding: 15px
+  margin: 10px
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  transition: box-shadow 1s
+  text-decoration: none
+  &:hover
+    box-shadow: 0px 0px 10px rgb(100,100,100)
+
+.details
+  border-top: solid 1px $grayBorders
+  text-align: center
+  position: relative
+  display: flex
+  flex-direction: column
+  width: 100%
+
+.precio
+  font-size: 25px
+  font-weight: bold
+  margin: 1px
+  width: 100%
+  color: $priceColor
+
+.descripcion
+  font-size: 28px
+  color: $blackText
+  align-self: flex-start
+  text-align: center

@@ -1,0 +1,34 @@
+<body class="d-flex flex-column min-vh-100">
+  <%- include ('../partials/social') %>
+
+    <%- include ('../partials/header') %>
+
+      <%- include ('../partials/offers') %>
+
+        <main>
+          <div class="items" id="showRoom">
+            <% showRoom.forEach(product=> { %>
+              <a class="product" href="./product/<%= product.id %>">
+                <article>
+                  <div>
+                    <img src="/img/<%= product.img %>" width="100%" alt="<%= product.name %>">
+                  </div>
+                  <div class="details">
+                    <p class="precio">
+                      $<%= product.price %>MXN
+                    </p>
+                  </div>
+                  <p class="descripcion">
+                    <%= product.name %>
+                  </p>
+                </article>
+              </a>
+              <% }) %>
+          </div>
+        </main>
+
+        <%- include ('../partials/footer') %>
+
+</body>
+
+</html>
