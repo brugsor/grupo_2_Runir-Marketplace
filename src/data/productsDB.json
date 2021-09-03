@@ -1,0 +1,35 @@
+[
+  {
+    "name": "FEINGUR",
+    "price": 320,
+    "category": "mead",
+    "description":
+      "El sabor pleno a miel, espeso y con notas de polen de Feingur es conseguido con una levadura de Voss, Noruega, cuya cepa es preservada con métodos tradicionales de las granjas noruegas. Feingur simbolizaba la fertilidad: la alegría del florecimiento, la vida de abundancia y la primavera resplandeciente.",
+    "img": "feingur.jpg",
+    "id": "feingur750"
+  },
+  {
+    "name": "ŌÞALAN",
+    "price": 320,
+    "category": "mead",
+    "description": "Lorem ipsum...",
+    "img": "othalan.jpg",
+    "id": "othalan750"
+  },
+  {
+    "name": "HÆGL",
+    "price": 320,
+    "category": "mead",
+    "description": "Lorem ipsum...",
+    "img": "haegl.jpg",
+    "id": "haegl750"
+  },
+  {
+    "name": "DRAUMSTAFIR",
+    "price": 320,
+    "category": "mead",
+    "description": "Lorem ipsum...",
+    "img": "draum.jpg",
+    "id": "draumstafir750"
+  }
+]

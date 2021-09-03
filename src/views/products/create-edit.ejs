@@ -3,31 +3,36 @@
 
     <%- include ('../partials/header') %>
 
-      <%- include ('../partials/offers') %>
-
-        <main>
-          <div class="items" id="showRoom">
-            <% showRoom.forEach(product=> { %>
-              <a class="product" href="./product/<%= product.id %>">
-                <article>
-                  <div>
-                    <img src="/img/<%= product.img %>" width="100%" alt="<%= product.name %>">
-                  </div>
-                  <div class="details">
-                    <p class="precio">
-                      $<%= product.price %>MXN
-                    </p>
-                  </div>
-                  <p class="descripcion">
-                    <%= product.name %>
+      <main>
+        <div>
+          <%- include ('../partials/product-create') %>
+        </div>
+        <div class="items" id="showRoom">
+          <% showRoom.forEach(product=> { %>
+            <a class="product" href="./product/<%= product.id %>">
+              <article>
+                <div>
+                  <%- include ('../partials/product-edit') %>
+                    <%- include ('../partials/product-delete') %>
+                </div>
+                <div>
+                  <img src="/img/<%= product.img %>" width="100%" alt="<%= product.name %>">
+                </div>
+                <div class="details">
+                  <p class="precio">
+                    $<%= product.price %>MXN
                   </p>
-                </article>
-              </a>
-              <% }) %>
-          </div>
-        </main>
+                </div>
+                <p class="descripcion">
+                  <%= product.name %>
+                </p>
+              </article>
+            </a>
+            <% }) %>
+        </div>
+      </main>
 
-        <%- include ('../partials/footer') %>
+      <%- include ('../partials/footer') %>
 
 </body>
 
