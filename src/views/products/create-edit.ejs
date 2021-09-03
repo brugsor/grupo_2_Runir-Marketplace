@@ -1,39 +1,44 @@
-<body class="d-flex flex-column min-vh-100">
-  <%- include ('../partials/social') %>
+<!DOCTYPE html>
+<html lang="en">
 
-    <%- include ('../partials/header') %>
+<%- include ('../partials/head') %>
 
-      <main>
-        <div>
-          <%- include ('../partials/product-create') %>
-        </div>
-        <div class="items" id="showRoom">
-          <% showRoom.forEach(product=> { %>
-            <a class="product" href="./product/<%= product.id %>">
-              <article>
-                <div>
-                  <%- include ('../partials/product-edit') %>
-                    <%- include ('../partials/product-delete') %>
-                </div>
-                <div>
-                  <img src="/img/<%= product.img %>" width="100%" alt="<%= product.name %>">
-                </div>
-                <div class="details">
-                  <p class="precio">
-                    $<%= product.price %>MXN
+  <body class="d-flex flex-column min-vh-100">
+    <%- include ('../partials/social') %>
+
+      <%- include ('../partials/header') %>
+
+        <main>
+          <div>
+            <%- include ('../partials/product-create') %>
+          </div>
+          <div class="items" id="showRoom">
+            <% showRoom.forEach(product=> { %>
+              <a class="product" href="./product/<%= product.id %>">
+                <article>
+                  <div>
+                    <%- include ('../partials/product-edit') %>
+                      <%- include ('../partials/product-delete') %>
+                  </div>
+                  <div>
+                    <img src="/img/<%= product.img %>" width="100%" alt="<%= product.name %>">
+                  </div>
+                  <div class="details">
+                    <p class="precio">
+                      $<%= product.price %>MXN
+                    </p>
+                  </div>
+                  <p class="descripcion">
+                    <%= product.name %>
                   </p>
-                </div>
-                <p class="descripcion">
-                  <%= product.name %>
-                </p>
-              </article>
-            </a>
-            <% }) %>
-        </div>
-      </main>
+                </article>
+              </a>
+              <% }) %>
+          </div>
+        </main>
 
-      <%- include ('../partials/footer') %>
+        <%- include ('../partials/footer') %>
 
-</body>
+  </body>
 
 </html>
