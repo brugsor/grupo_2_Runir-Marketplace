@@ -1,0 +1,9 @@
+{
+    "id": 101,
+    "firstName": "Juan",
+    "lastName": "Perez",
+    "email": "juanperez@mail.com",
+    "password":"juan1",
+    "category": "user",
+    "image": "avatar.png"
+}
