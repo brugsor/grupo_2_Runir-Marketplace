@@ -4,7 +4,7 @@
 // const logger = require("morgan");
 const express = require("express"); // Requiring the express module
 const path = require("path"); // Necessary to find the paths of files
-// const methodOverride = require("method-override"); // To use PUT and DELETE methods
+const methodOverride = require("method-override"); // To use PUT and DELETE methods
 
 // ********************* Setting the express module to the constant app ******************************************
 const app = express();
