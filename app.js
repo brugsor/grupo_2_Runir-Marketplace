@@ -5,6 +5,7 @@
 const express = require("express"); // Requiring the express module
 const path = require("path"); // Necessary to find the paths of files
 const methodOverride = require("method-override"); // To use PUT and DELETE methods
+const bcrypt = require("bcryptjs"); // Hashing passwords and sensitive data
 
 // ********************* Setting the express module to the constant app ******************************************
 const app = express();
