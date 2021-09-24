@@ -1,56 +1,150 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
+<%- include ('../partials/head') %>
+
+  <body class="d-flex flex-column min-vh-100">
+    <%- include ('../partials/social') %>
+
+      <%- include ('../partials/header') %>
+
+        <h1>
+          ¡ODDÍN! ¡MUÉSTRANOS EL CAMINO!
+        </h1>
+        <h2>
+          <%= error.status %>
+        </h2>
+        <p>Se ha producido un error tratando de ingresar a: <b>
+            <%= path %>
+          </b></p>
+        <pre><i><%= error.stack %></i></pre>
+
+        <%- include ('../partials/footer') %>
+
+  </body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>¡Odín, guíanos a nuestro destino!</title>
-  <style>
-    html,
-    body {
-      font-size: 10px;
-      font-family: sans-serif;
-      background-color: #dddddd;
-    }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    h1 {
-      font-size: 3.2em;
-    }
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+    integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css" />
+  <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/fonts/ionicons.min.css" />
+  <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css" />
 
-    h2 {
-      font-size: 2.4em;
-    }
-
-    pre {
-      color: crimson;
-      border: solid 1px crimson;
-      display: block;
-      padding: 10px;
-      border-radius: 10px;
-      font-size: 1.4em;
-    }
-
-    pre::first-line {
-      font-weight: bold;
-    }
-
-    p {
-      font-size: 1.5em;
-    }
-  </style>
+  <title>Página no encontrada</title>
 </head>
 
-<body>
-  <h1>
-    <%= message %>
-  </h1>
-  <h2>
-    <%= error.status %>
-  </h2>
-  <p>Se ha producido un error tratando de ingresar a: <b>
-      <%= path %>
-    </b></p>
-  <pre><i><%= error.stack %></i></pre>
+<body class="d-flex flex-column min-vh-100">
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: "v8.0",
+      });
+    };
+
+    (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    })(document, "script", "facebook-jssdk");
+  </script>
+
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat" attribution="setup_tool" page_id="100966481732612" theme_color="#d4a88c"></div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img width="100px" src="assets/img/logo.png" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="opalan.html">OPAL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="feingur.html">FEINGUR</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="haegl.html">HÆGL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="main  h-100">
+    <div class="parallax rock"></div>
+    <br />
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="text-center">Algo salió mal...</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p>
+            No encontramos la página que buscabas.
+          </p>
+          <a href="index.html" class="btn btn-outline-secondary">Ir a inicio</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <footer class="mt-auto">
+    <div class="container h-100">
+      <div class="row align-items-center h-100">
+        <div class="col-sm-12 col-md-4 text-left">
+          <span>Todos nuestros productos son para mayores de edad. Evita el
+            exceso.</span>
+        </div>
+        <div class="col-sm-12 col-md-4 text-center">
+          <a href="https://fb.me/runirmx"> <i class="fab fa-facebook"></i> </a>
+          <a href="https://www.instagram.com/runir_mead/"> <i class="fab fa-instagram"></i> </a>
+          <a href="#"> <i class="fab fa-whatsapp"></i> </a>
+        </div>
+        <div class="col-sm-12 col-md-4 text-right">
+          <a href="#">Aviso de privacidad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
+    integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD"
+    crossorigin="anonymous"></script>
+  <script>
+    if (!("ontouchstart" in document.documentElement)) {
+      document.documentElement.className += " no-touch";
+    }
+  </script>
 </body>
 
-</html> -->
+</html>

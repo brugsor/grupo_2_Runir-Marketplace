@@ -1,6 +1,6 @@
 // ****************************************** Require's ******************************************
-// const createError = require("http-errors");
-// const cookieParser = require("cookie-parser");
+const createError = require("http-errors");
+const cookieParser = require("cookie-parser");
 // const logger = require("morgan");
 const express = require("express"); // Requiring the express module
 const path = require("path"); // Necessary to find the paths of files
@@ -22,8 +22,8 @@ app.use(express.static(publicPath));
 // app.use(express.urlencoded({ extended: false }));
 // app.use(logger("dev"));
 // app.use(express.json());
-// app.use(cookieParser());
-// app.use(methodOverride("_method")); // To enable the use of method="POST" en el formulario por PUT y DELETE
+app.use(cookieParser());
+app.use(methodOverride("_method")); // To enable the use of method="POST" en el formulario por PUT y DELETE
 
 // ****************************************** Setting the view engine ******************************************
 app.set("views", path.join(__dirname, "./src/views"));
@@ -39,8 +39,8 @@ app.listen(port, () => {
   console.log("Server running on port " + port + ".");
 });
 
-// // ****************************************** Catching 404 error ******************************************
-// app.use((req, res, next) => next(createError(404)));
+// ****************************************** Catching 404 error ******************************************
+app.use((req, res, next) => next(createError(404)));
 
 // // ****************************************** Error Handler ******************************************
 // app.use((err, req, res, next) => {

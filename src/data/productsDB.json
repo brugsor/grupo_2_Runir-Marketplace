@@ -1,35 +1,74 @@
 [
   {
-    "name": "FEINGUR",
-    "price": 320,
-    "category": "mead",
+    "name":
+      "FEINGUR",
+    "price":
+      320,
+    "category":
+      "mead",
     "description":
       "El sabor pleno a miel, espeso y con notas de polen de Feingur es conseguido con una levadura de Voss, Noruega, cuya cepa es preservada con métodos tradicionales de las granjas noruegas. Feingur simbolizaba la fertilidad: la alegría del florecimiento, la vida de abundancia y la primavera resplandeciente.",
-    "img": "feingur.jpg",
-    "id": "feingur750"
+    "notes":
+      "Color con tonos amarillos claros y dorados. Se percibe el noble aroma de la miel multifloral acompañado de su dulce sabor que llena el paladar. Para disfrutar a bajas temperaturas. Es la bebida ideal para acompañar un festejo en comunidad, una danza de celebración o para compartir un día soleado. Aconsejamos se acompañe con un maridaje de quesos suaves cremosos y mermelada de cítricos.",
+    "presentation":
+      750,
+    "img":
+      "feingur.jpg",
+    "id":
+      "feingur750"
   },
   {
-    "name": "ŌÞALAN",
-    "price": 320,
-    "category": "mead",
-    "description": "Lorem ipsum...",
-    "img": "othalan.jpg",
-    "id": "othalan750"
+    "name":
+      "ŌÞALAN",
+    "price":
+      320,
+    "category":
+      "mead",
+    "description":
+      "El sabor afrutado, suave y refrescante de ÔÞalan está compuesto únicamente por miel mantequilla orgánica, levadura belga importada y agua purificada. ÔÞalan era la runa usada para representar al hogar: la esencia de lo acogedor, la calidez del refugio y el recuerdo de las raíces culturales.",
+    "notes":
+      "Color con tonos amarillos claros y dorados. Se puede apreciar un aroma suave y frutal que complementa el sabor con notas de litchi y manzana. Para disfrutar a bajas temperaturas. Es la bebida ideal para un brindis de bienvenida al iniciar una reunión o para simplemente disfrutar en una tarde lluviosa al interior de tu hogar. Recomendamos se acompañe con un maridaje de moras frescas y setas silvestres.",
+    "presentation":
+      750,
+    "img":
+      "othalan.jpg",
+    "id":
+      "othalan750"
   },
   {
-    "name": "HÆGL",
-    "price": 320,
-    "category": "mead",
-    "description": "Lorem ipsum...",
-    "img": "haegl.jpg",
-    "id": "haegl750"
+    "name": 
+      "HÆGL",
+    "price": 
+      320,
+    "category": 
+      "mead",
+    "description":
+      "El sabor seco con notas de durazno y final cálido de Hægl es alcanzado a partir del cuidadoso equilibrio entre mieles tostadas, levadura de origen belga y agua. La runa Hægl significa “granizo”: el grano blanco que cae del cielo, la contemplación de las transformaciones del agua y la reflexión sobre los cambios sublimes de la naturaleza.",
+    "notes": 
+      "Color con tonos tostados de rojo y ámbar. Se percibe un aroma acaramelado acompañado de notas frutales. Para disfrutar a bajas temperaturas. Es la bebida ideal para un picnic sobre hojas crujientes, una convivencia con fogata o para contemplar un atardecer rojizo. Recomendamos se acompañe con un maridaje de pan negro de centeno y queso maduro fundido.",
+    "presentation": 
+      750,
+    "img": 
+      "haegl.jpg",
+    "id": 
+      "haegl750"
   },
   {
-    "name": "DRAUMSTAFIR",
-    "price": 320,
-    "category": "mead",
-    "description": "Lorem ipsum...",
-    "img": "draum.jpg",
-    "id": "draumstafir750"
+    "name": 
+      "DRAUMSTAFIR",
+    "price": 
+      320,
+    "category": 
+    "mead",
+    "description":
+      "El sabor dulce con notas de café de Draumstafir es logrado con el tostado completo de miel orgánica, nuestra selecta levadura originaria de Voss, Noruega, y agua purificada. Draumstafir significa “soñar con los deseos más profundos del corazón”, sello que alude al plano místico de la imaginación y la magia presente en nuestros más íntimos anhelos.",
+    "notes": 
+      "Color oscuro rojizo entre ámbar y negro. Se percibe un sabor dulce con notas de café de Draumstafir. Es la bebida ideal para disfrutar en una noche estrellada al pie de las montañas o en una reunión nocturna frente a una fogata. Aconsejamos se acompañe con un maridaje de nueces y tarta de chocolate semiamargo.",
+    "presentation": 
+      750,
+    "img": 
+      "draum.jpg",
+    "id": 
+      "draumstafir750"
   }
 ]
