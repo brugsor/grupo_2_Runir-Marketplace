@@ -57,7 +57,7 @@ const uploadFile = multer({ storage });
 router.post(
   "/create-edit",
   uploadFile.single("product"),
-  proudctController.create
+  //productController.create
 );
 
 // ******* Exporting the module
