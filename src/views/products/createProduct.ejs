@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include ('../partials/head') %>
+
+<body class="d-flex flex-column min-vh-100">
+
+<%- include ('../partials/social') %>
+
+<%- include ('../partials/header') %>
+
+
+<div class="rock-bg">
+    <section class="section-form">
+        <div class="div-form">
+            
+            <h1>Crear Producto</h1>
+                <main class="Crear"></main>
+                <form class="CrearProducto" method="POST" action="/crearProducto">
+                    <!--Nombre del producto-->
+                    <label for="form-input1" class="label-input1">Nombre del producto</label>
+                    <div><input type="input" form="input1" class="input1" placeholder="Producto"></div>
+                    <!--Precio-->
+                    <label for="form-input2" class="label-input2">Precio del producto</label>
+                    <div><input type="input" form="input2" class="input2" placeholder="Precio MXN"></div>
+                    <!--Presentacion-->
+                    <label for="form-input3" class="label-input3">Presentación del envase</label>
+                    <div><input type="number" form="input3" class="input3" placeholder="Presentación ml"></div>
+                    <!--Descripción del producto-->
+                    <label for="descripcion" class="label-input4"> Descripción del producto</label>
+                    <div><textarea name="descripcion" id="descripcion" placeholder="Escriba una breve descripción del producto"> </textarea></div>
+                    <!--Imagen-->
+                    <label for="form-input4" class="label-input4">Imagen</label>
+                    <input type="file"  name="imagenProducto" accept=".jpg">
+                    <!--Submit-->
+                    <div><button type="submit"  class="Agregar">Agregar nuevo producto </button></div>
+                    <!--Volver a la lista de productos-->
+                    <div><button type="submit"  class="Agregar"><a href='/create-edit'> Volver a la lista de productos</a></button></div>
+
+                </form>
+            </main>
+        </div>
+    </section>
+</div>
+
+
+
+<%- include ('../partials/footer') %>
+</body>
+</html>

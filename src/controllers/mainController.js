@@ -18,6 +18,8 @@ const styles = {
   createEdit: "create-edit",
   about: "about",
   profile: "profile",
+  createProduct: "createProduct",
+  editProduct: "editProduct"
 };
 
 // Actions for every route
@@ -78,6 +80,18 @@ const mainController = {
   profile: (req, res) => {
     res.render("./users/profile", {
       style: styles.profile,
+    });
+  },
+  //create the create product page
+  createProduct: (req,res) => {
+    res.render("./products/createProduct", {
+      style: styles.createProduct,
+    });
+  },
+  //create the edit product page
+  editProduct: (req,res) => {
+    res.render("./products/editProduct", {
+      style: styles.editProduct,
     });
   },
 };
