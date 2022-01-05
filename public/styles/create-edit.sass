@@ -341,3 +341,57 @@ $text-offset: $a-height - 200
   color: $blackText
   align-self: flex-start
   text-align: center
+
+// Modal styles
+
+.button
+  background: $submitButtonsColor
+  padding: 1em 2em
+  color: $buttonTextColor
+  border: 0
+  &:hover
+    background: $hoverSubmitButtonColor
+
+.modal
+  display: none
+  position: fixed
+  z-index: 1
+  left: 0
+  top: 0
+  height: 100%
+  width: 100%
+  overflow: auto
+  background-color: rgba(0, 0, 0, 0.5)
+
+.modal-content
+  background-color: $lightBackground
+  margin: 20% auto
+  width: 70%
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17)
+  animation-name: modalopen
+  animation-duration: 1s
+
+@keyframes modalopen
+  from: opacity 0
+  to: opacity 1
+
+.modal-header
+  padding: 15px
+  color: $titlesColor
+
+.modal-body
+  padding: 10px 20px
+
+.modal-footer
+  padding: 10px
+  text-align: center
+
+.closeBtn
+  color: $titlesColor
+  float: right
+  font-size: 30px
+  &:hover
+    &:focus
+      color: $blackText
+      text-decoration: none
+      cursor: pointer

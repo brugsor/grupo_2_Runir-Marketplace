@@ -1,57 +1,56 @@
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-success" data-mdb-toggle="modal" data-mdb-target="#createProduct">
+<button id="modalBtn" class="button">
   Crear Nuevo Producto
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="createProduct" tabindex="-1" aria-labelledby="createProductLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="createProductLabel">Crear Nuevo Producto</h5>
-        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form action="/products" method="POST">
-          <div class="row product-detail">
-            <div class="col-12 col-md-6">
-              <label for="name" class="form-label">Nombre del producto:</label>
-              <input type="text" id="name" name="name" placeholder="GRASKER" class="form-input">
-            </div>
-            <div class="col-12 col-md-6">
-              <label for="price" class="form-label">Precio del producto:</label>
-              <input type="text" id="price" name="price" placeholder="650" class="form-input">
-            </div>
-            <div class="col-12 col-md-6">
-              <label for="img" class="form-label">Imagen:</label>
-              <input accept="image/*" type="file" id="files" /><img id="image" />
-              <div id="image-holder"></div>
-            </div>
-            <div class="col-12 col-md-6">
-              <label for="category" class="form-label">Categoría:</label>
-              <select name="category" id="category" class="form-input">
-                <option value="">Selecciona Categoría</option>
-                <option value="mead">Botellas</option>
-                <option value="accessories">Accesorios</option>
-                <option value="events">Eventos</option>
-              </select>
-            </div>
-            <div class="col-12">
-              <label for="description" class="form-label">Descipción:</label>
-              <textarea name="description" id="description" class="form-input"></textarea>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="buy-now-button">Publicar producto</button>
-            </div>
+<div class="modal" id="createProductModal" tabindex="-1" aria-labelledby="createProductLabel" aria-hidden="true">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="closeBtn">&times;</span>
+      <h5 class="modal-title" id="createProductLabel">Crear Nuevo Producto</h5>
+    </div>
+    <div class="modal-body">
+      <form action="/products" method="POST">
+        <div class="row product-detail">
+          <div class="col-12 col-md-6">
+            <label for="name" class="form-label">Nombre del producto:</label>
+            <input type="text" id="name" name="name" placeholder="GRASKER" class="form-input">
           </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
-          Cancelar
-        </button>
-        <button type="button" class="btn btn-primary">Publicar Producto</button>
-      </div>
+          <div class="col-12 col-md-6">
+            <label for="price" class="form-label">Precio del producto:</label>
+            <input type="text" id="price" name="price" placeholder="650" class="form-input">
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="img" class="form-label">Imagen:</label>
+            <input accept="image/*" type="file" id="files" /><img id="image" />
+            <div id="image-holder"></div>
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="category" class="form-label">Categoría:</label>
+            <select name="category" id="category" class="form-input">
+              <option value="">Selecciona Categoría</option>
+              <option value="mead">Botellas</option>
+              <option value="accessories">Accesorios</option>
+              <option value="events">Eventos</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <label for="description" class="form-label">Descripción:</label>
+            <textarea name="description" id="description" class="form-input"></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="buy-now-button">Publicar producto</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+        Cancelar
+      </button>
+      <button type="button" class="btn btn-primary">Publicar Producto</button>
     </div>
   </div>
+</div>
 </div>

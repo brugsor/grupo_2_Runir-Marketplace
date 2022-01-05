@@ -5,8 +5,9 @@
         <img width="100vw" src="/img/logoCabin.png" />
         <img width="100vw" src="/img/runirName.png" alt="Rúnir">
       </a>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Busca en Rúnir.com" aria-label="Search">
+      <form action="/search" method="GET" class="d-flex">
+        <input class="form-control me-2" type="text" name="keywords" placeholder="Busca en Rúnir.com"
+          aria-label="Search">
         <button class="btn btn-outline-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
       </form>
       <a class="shoppingCart" href="./cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>

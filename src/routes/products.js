@@ -1,9 +1,34 @@
-// // ************ Require's ************
-// const express = require("express");
-// const router = express.Router();
+// Requiring express and router
+const express = require("express");
+const router = express.Router();
+const path = require("path");
 
-// // ************ Controller Require ************
-// const productController = require("../controllers/productController");
+// Requiring multer middleware
+const multer = require("multer"); // Multer library for uploading files to the server
+
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, path.join(__dirname, "../../public/img/productImg"));
+  },
+  filename: (req, file, cb) => {
+    let imageName = Date.now() + path.extname(file.originalname);
+    cb(null, imageName);
+  },
+});
+
+let fileUpload = multer({
+  storage,
+});
+
+// ************ Create new product form route ***********************
+router.post(
+  "/products",
+  fileUpload.single("productImg"),
+  controller.formProcessor
+);
+
+// ************ Controller Require ************
+const productController = require("../controllers/productController");
 
 // /*** GET ALL PRODUCTS ***/
 // router.get("/", productController.index);

@@ -2,9 +2,6 @@
 const express = require("express");
 const router = express.Router();
 
-// Requiring multer middleware
-const multer = require("multer");
-
 // Requiring the main controller
 const mainController = require("../controllers/mainController");
 
@@ -15,6 +12,8 @@ router.get("/", mainController.index);
 router.get("/home", mainController.index);
 // GET /index
 router.get("/index", mainController.index);
+// GET /search
+router.get("/search", mainController.search);
 
 /* GET register */
 router.get("/register", mainController.register);

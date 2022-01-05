@@ -1,12 +1,23 @@
 const fs = require("fs");
 const path = require("path");
 
-// Calling for data source
+// Calling for data source of products
 const productsFilePath = path.join(__dirname, "../data/productsDB.json");
 const productCollection = JSON.parse(
   fs.readFileSync(productsFilePath, "utf-8")
 );
 const users = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+
+// Categories
+const hidromiel = products.filter(function (product) {
+  return product.category == "hidromiel";
+});
+const eventos = products.filter(function (product) {
+  return product.category == "eventos";
+});
+const complementos = products.filter(function (product) {
+  return product.category == "complementos";
+});
 
 // Setting the different styles
 const styles = {
@@ -31,7 +42,7 @@ const mainController = {
   search: (req, res) => {
     let search = req.query.keywords;
     let productsToSearch = productCollection.filter((product) =>
-      product.name.toLowerCase().includes(search)
+      product.name.toUpperCase().includes(search)
     );
     res.render("results", {
       products: productsToSearch,

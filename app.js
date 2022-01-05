@@ -5,6 +5,7 @@ const cookieParser = require("cookie-parser");
 const express = require("express"); // Requiring the express module
 const path = require("path"); // Necessary to find the paths of files
 const methodOverride = require("method-override"); // To use PUT and DELETE methods
+const multer = require("multer"); // Multer library for uploading files to the server
 const bcrypt = require("bcryptjs"); // Hashing passwords and sensitive data
 
 // ********************* Setting the express module to the constant app ******************************************
@@ -41,6 +42,34 @@ app.listen(port, () => {
 
 // ****************************************** Catching 404 error ******************************************
 app.use((req, res, next) => next(createError(404)));
+
+// ****************************************** Modals ******************************************************
+// Get modal element
+var createProductModal = document.getElementById("createProductModal");
+// Get open modal button
+var modalBtn = document.getElementById("modalBtn");
+// Get close modal button
+var closeBtn = document.getElementsByClassName("closeBtn")[0];
+
+// Listen for open click
+modalBtn.addEventListener("click", openModal);
+// Listen for close click
+closeBtn.addEventListener("click", closeModal);
+// Listen for outside click
+window.addEventListener("click", outsideClick);
+// Function to open modal
+function openModal() {
+  createProductModal.style.display = "block";
+}
+// Functions to close modal
+function closeModal() {
+  createProductModal.style.display = "none";
+}
+function outsideClick(e) {
+  if (e.target == createProductModal) {
+    createProductModal.style.display = "none";
+  }
+}
 
 // // ****************************************** Error Handler ******************************************
 // app.use((err, req, res, next) => {

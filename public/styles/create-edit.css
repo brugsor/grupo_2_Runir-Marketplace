@@ -702,4 +702,75 @@ main {
       align-self: flex-start;
   text-align: center;
 }
+
+.button {
+  background: #00A5CF;
+  padding: 1em 2em;
+  color: #ffffff;
+  border: 0;
+}
+
+.button:hover {
+  background: #018eb1;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #e4dfda;
+  margin: 20% auto;
+  width: 70%;
+  -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  -webkit-animation-name: modalopen;
+          animation-name: modalopen;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes modalopen {
+  from: opacity 0;
+  to: opacity 1;
+}
+
+@keyframes modalopen {
+  from: opacity 0;
+  to: opacity 1;
+}
+
+.modal-header {
+  padding: 15px;
+  color: #706563;
+}
+
+.modal-body {
+  padding: 10px 20px;
+}
+
+.modal-footer {
+  padding: 10px;
+  text-align: center;
+}
+
+.closeBtn {
+  color: #706563;
+  float: right;
+  font-size: 30px;
+}
+
+.closeBtn:hover:focus {
+  color: #040F16;
+  text-decoration: none;
+  cursor: pointer;
+}
 /*# sourceMappingURL=create-edit.css.map */
