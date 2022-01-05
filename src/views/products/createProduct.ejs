@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include ('../partials/head') %>
+
+<body class="d-flex flex-column min-vh-100">
+
+<%- include ('../partials/social') %>
+
+<%- include ('../partials/header') %>
+
+
+<div class="rock-bg">
+    <section class="section-form">
+        <div class="div-form">
+            
+            <h1>Crear Producto</h1>
+                <main class="Crear"></main>
+                <form class="CrearProducto" method="POST" action="/crearProducto">
+                    <!--Nombre del producto-->
+                    <label for="name" class="label-input1">Nombre del producto</label>
+                    <div><input type="input" id="name" name="name" form="input1" class="input1" placeholder="Producto"></div>
+                    <!--Precio-->
+                    <label for="price" class="label-input2">Precio del producto</label>
+                    <div><input type="input" id="price" name="price" form="input2" class="input2" placeholder="Precio MXN"></div>
+                    <!--Categoría-->
+                    <label for="category" class="label-input3">Categoría</label>
+                    <div><input type="input" id="category" name="category" form="input3" class="input3" placeholder="Categoría"></div>
+                    <!--Descripción del producto-->
+                    <label for="description" class="label-input4"> Descripción del producto</label>
+                    <div><textarea name="descripcion" id="description" name="decription" placeholder="Escriba una breve descripción del producto"> </textarea></div>
+                    <!--Presentacion-->
+                    <label for="presentation" class="label-input5">Presentación del envase</label>
+                    <div><input type="number" id="presentation" name="presentation" form="input5" class="input5" placeholder="Presentación ml"></div>
+                    <!--Imagen-->
+                    <label for="img" class="label-input5">Imagen</label>
+                    <input type="file" id="img" name="imagenProducto" accept=".jpg">
+                    <!--ID-->
+                    <label for="id" class="label-input6"> ID del producto</label>
+                    <div><textarea name="id" id="id" > </textarea></div>
+                    <!--Submit-->
+                    <div><button type="submit"  class="Agregar">Agregar nuevo producto </button></div>
+                    <!--Volver a la lista de productos-->
+                    <div><button type="submit"  class="Agregar"><a href='/create-edit'> Volver a la lista de productos</a></button></div>
+
+                </form>
+            </main>
+        </div>
+    </section>
+</div>
+
+
+
+<%- include ('../partials/footer') %>
+</body>
+</html>

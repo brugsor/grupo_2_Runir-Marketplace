@@ -36,6 +36,12 @@ router.get("/create-edit", mainController.createEdit);
 // Path /profile
 router.get("/profile", mainController.profile);
 
+//Path /createProduct
+router.get("/createProduct", mainController.createProduct);
+
+//Path /editProduct
+router.get("/editProduct", mainController.editProduct);
+
 // Path 404 ¿?
 router.get("*", (req, res) => {
   res.status(404).send("404 not found. <br> ¡Odín, guíanos a nuestro destino!");
@@ -56,7 +62,7 @@ const uploadFile = multer({ storage });
 router.post(
   "/create-edit",
   uploadFile.single("product"),
-  proudctController.create
+  //productController.create
 );
 
 // ******* Exporting the module

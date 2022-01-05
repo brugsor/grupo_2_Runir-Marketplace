@@ -20,9 +20,12 @@ const router = require("./src/routes/mainRoutes"); // Connecting the router to c
 const publicPath = path.resolve(__dirname, "./public");
 app.use(express.static(publicPath));
 
-// app.use(express.urlencoded({ extended: false }));
+//To enable POST
+app.use(express.urlencoded({ extended: false }));
 // app.use(logger("dev"));
-// app.use(express.json());
+app.use(express.json());
+
+
 app.use(cookieParser());
 app.use(methodOverride("_method")); // To enable the use of method="POST" en el formulario por PUT y DELETE
 

@@ -10,69 +10,38 @@
 <%- include ('../partials/header') %>
 
 
-<!--
-  <header>
-    <nav class="navbar navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./">
-          <img width="100vw" src="/img/logoCabin.png" />
-          <img width="100vw" src="/img/runirName.png" alt="Rúnir">
-        </a>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Busca en Rúnir.com" aria-label="Search">
-          <button class="btn btn-outline-secondary" type="submit"><i class="fa fa-search"
-              aria-hidden="true"></i></button>
-        </form>
-        <a class="shoppingCart" href="./cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link" href="./">INICIO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">INGRESAR</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./register">REGÍSTRATE</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
--->
+
+<div class="rock-bg">
+  <section class="section-form">
+  <div class="div-form">
+    <h1 >Iniciar sesión </h1>
   <main class="login">
-    <label for="form-input1" class="label-input"><i class="fas fa-user"></i> Usuario</label>
-    <div><input type="text" class="text-input" placeholder="Correo electrónico o usuario"></div>
-    <label for="form-input3" class="label-input"><i class="fas fa-key"></i> Contraseña</label>
-    <div><input type="password" class="text-input" placeholder="Contraseña"></div>
-    <div><button type="button" input="submit" class="ingresar">Iniciar sesión</button></div>
-    <div><a href="#"> ¿Olvidaste tu contraseña?</a></div>
-    <div>Si aún no eres cliente:</div>
-    <div><a href="register.html"> Registrate aquí</a></div>
+    
+    
+    <form action="/login" method="POST">
+      <!--Usuario -->
+      <label for="form-input1" class="label-input"><i class="fas fa-user"></i> Usuario</label>
+      <div><input type="input" id="form-input1" class="class-input" placeholder="Correo electrónico o nombre de usuario"></div>
+      <!--Contraseña-->
+      <label for="form-input2" class="label-input"><i class="fas fa-key"></i> Contraseña</label>
+      <div><input type="password" id="form-input2" class="text-input" placeholder="Contraseña"></div>
+      <!--Button iniciar sesión-->
+      <div><button type="submit"  class="ingresar">Iniciar sesión</button></div>
+      <!--Recuperación de contraseña-->
+      <section class="Recuperacion">
+        <div><h2><a href="#"> ¿Olvidaste tu contraseña?</a></h2></div>
+        <!--redirigir a Formulario de registro-->
+        <div><h2> Si aún no eres cliente:</h2></div>
+        <div><h2><a href="/register"> Registrate aquí</a></h2></div>
+     </section>
+  </form>
   </main>
+</div>
+  </section>
+</div>
 
   <%- include ('../partials/footer') %>
-  <!--
-  <footer>
-    <div class="ageWarning">
-      <p>TODOS NUESTROS PRODUCTOS SON PARA MAYORES DE EDAD</p>
-      <p>EVITA EL EXCESO</p>
-    </div>
-    <div class="contact">
-      <a href="https://fb.me/runirmx"> <i class="fab fa-facebook"></i> </a>
-      <a href="https://www.instagram.com/runir_mead/"> <i class="fab fa-instagram"></i> </a>
-      <a href="#"> <i class="fab fa-whatsapp"></i> </a>
-    </div>
-    <div class="privacy">
-      <a href="#">Aviso de privacidad</a>
-    </div>
-  </footer>
--->
+  
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
     integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD"
     crossorigin="anonymous"></script>

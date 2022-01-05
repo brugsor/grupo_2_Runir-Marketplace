@@ -5,5 +5,6 @@
     "email": "juanperez@mail.com",
     "password":"juan1",
     "category": "user",
-    "image": "avatar.png"
+    "image": "avatar.png",
+    "birthDate": "01/01/2000"
 }
