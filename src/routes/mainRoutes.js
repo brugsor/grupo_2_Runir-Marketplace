@@ -47,23 +47,23 @@ router.get("*", (req, res) => {
   res.status(404).send("404 not found. <br> ¡Odín, guíanos a nuestro destino!");
 });
 
-// ******* Configuring Multer for file processing
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, "/public/img/products");
-  },
-  filename: function (req, res, cb) {
-    cb(null, "${Date.now()}_img_${path.extname(file.originalname)}");
-  },
-});
-// Multer acting as middleware
-const uploadFile = multer({ storage });
-// Calling for multer
-router.post(
-  "/create-edit",
-  uploadFile.single("product"),
-  //productController.create
-);
+// // ******* Configuring Multer for file processing
+// const storage = multer.diskStorage({
+//   destination: function (req, file, cb) {
+//     cb(null, "/public/img/products");
+//   },
+//   filename: function (req, res, cb) {
+//     cb(null, "${Date.now()}_img_${path.extname(file.originalname)}");
+//   },
+// });
+// // Multer acting as middleware
+// const uploadFile = multer({ storage });
+// // Calling for multer
+// router.post(
+//   "/create-edit",
+//   uploadFile.single("product"),
+//   //productController.create
+// );
 
 // ******* Exporting the module
 module.exports = router;

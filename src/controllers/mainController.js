@@ -1,12 +1,8 @@
-const fs = require("fs");
-const path = require("path");
+const db = require("../database/models");
+const sequelize = db.sequelize;
 
-// Calling for data source of products
-const productsFilePath = path.join(__dirname, "../data/productsDB.json");
-const productCollection = JSON.parse(
-  fs.readFileSync(productsFilePath, "utf-8")
-);
-const users = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+//Otra forma de llamar a los modelos
+const Products = db.Product;
 
 // Categories
 const hidromiel = products.filter(function (product) {
@@ -30,7 +26,7 @@ const styles = {
   about: "about",
   profile: "profile",
   createProduct: "createProduct",
-  editProduct: "editProduct"
+  editProduct: "editProduct",
 };
 
 // Actions for every route
@@ -94,13 +90,13 @@ const mainController = {
     });
   },
   //create the create product page
-  createProduct: (req,res) => {
+  createProduct: (req, res) => {
     res.render("./products/createProduct", {
       style: styles.createProduct,
     });
   },
   //create the edit product page
-  editProduct: (req,res) => {
+  editProduct: (req, res) => {
     res.render("./products/editProduct", {
       style: styles.editProduct,
     });

@@ -1,81 +1,83 @@
-const fs = require("fs");
-const path = require("path");
+const db = require("../database/models");
+const sequelize = db.sequelize;
 
-const productsFilePath = path.join(__dirname, "../data/productsDB.json");
-const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+//Otra forma de llamar a los modelos
+const Products = db.Product;
 
 const productController = {
-  // Root - Show all products
-  index: (req, res) => {
-    res.render("products", {
-      products,
+  list: (req, res) => {
+    db.Product.findAll().then((prducts) => {
+      res.render("index.ejs", { products });
     });
   },
-
-  // Detail - Detail from one product
   detail: (req, res) => {
-    let id = req.params.id;
-    let product = products.find((product) => product.id == id);
-    res.render("detail", {
-      product,
+    db.Product.findByPk(req.params.id).then((product) => {
+      res.render("product.ejs", { product });
     });
   },
-
-  // Create - Form to create
-  create: (req, res) => {
-    res.render("product-create-form");
+  add: function (req, res) {
+    return res.render("product-create.ejs");
   },
-
-  // Create -  Method to store
-  store: (req, res) => {
-    let newProduct = {
-      ...req.body,
-      image: "madera.png",
-      id: products[products.length - 1].id + 1,
-    };
-    products.push(newProduct);
-    fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
-    res.redirect("/");
+  create: function (req, res) {
+    Products.create({
+      title: req.body.title,
+      inventory: req.body.inventory,
+      awards: req.body.awards,
+      description: req.body.description,
+      notes: req.body.notes,
+      img: req.body.img,
+      price: req.body.price,
+    })
+      .then(() => {
+        return res.redirect("/create-edit");
+      })
+      .catch((error) => res.send(error));
   },
-
-  // Update - Form to edit
-  edit: (req, res) => {
-    let id = req.params.id;
-    let productToEdit = products.find((product) => product.id == id);
-    res.render("product-edit-form", { productToEdit });
+  edit: function (req, res) {
+    let productId = req.params.id;
+    Products.findByPk(productId).then((Product) => {
+      return res.render("product-edit.ejs", { Product });
+    });
   },
-  // Update - Method to update
-  update: (req, res) => {
-    let id = req.params.id;
-    let productToEdit = products.find((product) => product.id == id);
-
-    productToEdit = {
-      id: productToEdit.id,
-      ...req.body,
-      image: productToEdit.image,
-    };
-
-    let newProducts = products.map((product) => {
-      if (product.id == productToEdit.id) {
-        return (product = { ...productToEdit });
+  update: function (req, res) {
+    let movieId = req.params.id;
+    Movies.update(
+      {
+        title: req.body.title,
+        rating: req.body.rating,
+        awards: req.body.awards,
+        release_date: req.body.release_date,
+        length: req.body.length,
+        genre_id: req.body.genre_id,
+      },
+      {
+        where: { id: movieId },
       }
-      return product;
-    });
-
-    fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, " "));
-    res.redirect("/");
+    )
+      .then(() => {
+        return res.redirect("/create-edit.ejs");
+      })
+      .catch((error) => res.send(error));
   },
-
-  // Delete - Delete one product from DB
-  destroy: (req, res) => {
-    let id = req.params.id;
-    let finalProducts = products.filter((product) => product.id != id);
-    fs.writeFileSync(
-      productsFilePath,
-      JSON.stringify(finalProducts, null, " ")
-    );
-    res.redirect("/");
+  delete: function (req, res) {
+    let productId = req.params.id;
+    Products.findByPk(productId)
+      .then((movie) => {
+        return res.render("product-delete.ejs", { Product });
+      })
+      .catch((error) => res.send(error));
+  },
+  destroy: function (req, res) {
+    let productId = req.params.id;
+    Products.destroy({
+      where: { id: productId },
+      force: true,
+    })
+      .then(() => {
+        return res.redirect("/movies");
+      })
+      .catch((error) => res.send(error));
   },
 };
 
-module.exports = productController;
+module.exports = productsController;
