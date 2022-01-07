@@ -1,24 +1,34 @@
 const db = require("../database/models");
 const sequelize = db.sequelize;
+const { Op } = require("sequelize");
 
-//Otra forma de llamar a los modelos
-const Products = db.Product;
+// Setting the different styles
+const styles = {
+  index: "styles",
+  register: "register",
+  login: "login",
+  cart: "cart",
+  product: "product",
+  createEdit: "create-edit",
+  about: "about",
+  profile: "profile",
+  createProduct: "createProduct",
+  editProduct: "editProduct",
+};
 
-const productController = {
-  list: (req, res) => {
-    db.Product.findAll().then((prducts) => {
-      res.render("index.ejs", { products });
-    });
-  },
+const productsController = {
   detail: (req, res) => {
     db.Product.findByPk(req.params.id).then((product) => {
-      res.render("product.ejs", { product });
+      res.render("./products/detail.ejs", {
+        item: product,
+        style: styles.product,
+      });
     });
   },
-  add: function (req, res) {
-    return res.render("product-create.ejs");
-  },
   create: function (req, res) {
+    res.render("/product/create-edit.ejs");
+  },
+  add: function (req, res) {
     Products.create({
       title: req.body.title,
       inventory: req.body.inventory,

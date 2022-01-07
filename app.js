@@ -12,8 +12,8 @@ const bcrypt = require("bcryptjs"); // Hashing passwords and sensitive data
 const app = express();
 
 // ****************************************** Requiring all route files ******************************************
-const router = require("./src/routes/mainRoutes"); // Connecting the router to communicate with the main views
-// const productRouter = require("./src/routes/products"); // Connecting the router to communicate with the main views
+const mainRoutes = require("./src/routes/mainRoutes"); // Connecting the router to communicate with the main views
+const productsRoutes = require("./src/routes/productsRoutes"); // Connecting the router to communicate with the main views
 
 // ****************************************** Middlewares ******************************************
 // Establishing the path for requiring static resources
@@ -33,8 +33,9 @@ app.set("views", path.join(__dirname, "./src/views"));
 app.set("view engine", "ejs");
 
 // ****************************** Setting all routes to be obtained from the routes file ***************************
-app.use("/", router);
-// app.use("/products", productRouter);
+app.use("/", mainRoutes);
+app.use(mainRoutes);
+app.use(productsRoutes);
 
 // ****************************************** Waking the server ******************************************
 let port = process.env.PORT || 3000;
@@ -46,32 +47,32 @@ app.listen(port, () => {
 app.use((req, res, next) => next(createError(404)));
 
 // ****************************************** Modals ******************************************************
-// Get modal element
-var createProductModal = document.getElementById("createProductModal");
-// Get open modal button
-var modalBtn = document.getElementById("modalBtn");
-// Get close modal button
-var closeBtn = document.getElementsByClassName("closeBtn")[0];
+// // Get modal element
+// var createProductModal = document.getElementById("createProductModal");
+// // Get open modal button
+// var modalBtn = document.getElementById("modalBtn");
+// // Get close modal button
+// var closeBtn = document.getElementsByClassName("closeBtn")[0];
 
-// Listen for open click
-modalBtn.addEventListener("click", openModal);
-// Listen for close click
-closeBtn.addEventListener("click", closeModal);
-// Listen for outside click
-window.addEventListener("click", outsideClick);
-// Function to open modal
-function openModal() {
-  createProductModal.style.display = "block";
-}
-// Functions to close modal
-function closeModal() {
-  createProductModal.style.display = "none";
-}
-function outsideClick(e) {
-  if (e.target == createProductModal) {
-    createProductModal.style.display = "none";
-  }
-}
+// // Listen for open click
+// modalBtn.addEventListener("click", openModal);
+// // Listen for close click
+// closeBtn.addEventListener("click", closeModal);
+// // Listen for outside click
+// window.addEventListener("click", outsideClick);
+// // Function to open modal
+// function openModal() {
+//   createProductModal.style.display = "block";
+// }
+// // Functions to close modal
+// function closeModal() {
+//   createProductModal.style.display = "none";
+// }
+// function outsideClick(e) {
+//   if (e.target == createProductModal) {
+//     createProductModal.style.display = "none";
+//   }
+// }
 
 // // ****************************************** Error Handler ******************************************
 // app.use((err, req, res, next) => {

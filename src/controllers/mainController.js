@@ -1,19 +1,6 @@
 const db = require("../database/models");
 const sequelize = db.sequelize;
-
-//Otra forma de llamar a los modelos
-const Products = db.Product;
-
-// Categories
-const hidromiel = products.filter(function (product) {
-  return product.category == "hidromiel";
-});
-const eventos = products.filter(function (product) {
-  return product.category == "eventos";
-});
-const complementos = products.filter(function (product) {
-  return product.category == "complementos";
-});
+const { Op } = require("sequelize");
 
 // Setting the different styles
 const styles = {
@@ -32,20 +19,23 @@ const styles = {
 // Actions for every route
 const mainController = {
   index: (req, res) => {
-    res.render("./products/index", {
-      showRoom: productCollection,
-      style: styles.index,
+    db.Product.findAll().then((products) => {
+      res.render("./products/index", {
+        style: styles.index,
+        products: products,
+      });
     });
   },
   search: (req, res) => {
     let search = req.query.keywords;
-    let productsToSearch = productCollection.filter((product) =>
-      product.name.toUpperCase().includes(search)
-    );
-    res.render("results", {
-      products: productsToSearch,
-      search,
-      toThousand,
+    db.Product.findAll({
+      where: { title: { [Op.like]: "%" + search + "%" } },
+    }).then((results) => {
+      res.render("./products/results", {
+        resultProducts: results,
+        search,
+        style: styles.index,
+      });
     });
   },
   register: (req, res) => {

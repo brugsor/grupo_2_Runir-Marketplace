@@ -12,11 +12,11 @@
 
           <main>
             <div class="items" id="showRoom">
-              <% showRoom.forEach(product=> { %>
-                <a class="product" href="./product/<%= product.id %>">
+              <% products.forEach(product=> { %>
+                <a class="product" href="/detail/<%= product.product_id %>">
                   <article>
                     <div>
-                      <img src="/img/<%= product.img %>" width="100%" alt="<%= product.name %>">
+                      <img src="/img/<%= product.img %>" width="100%" alt="<%= product.title %>">
                     </div>
                     <div class="details">
                       <p class="precio">
@@ -24,7 +24,7 @@
                       </p>
                     </div>
                     <p class="descripcion">
-                      <%= product.name %>
+                      <%= product.title %>
                     </p>
                   </article>
                 </a>
